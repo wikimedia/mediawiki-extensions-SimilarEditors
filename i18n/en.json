@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"similareditors": "Similar Editors",
 	"similareditors-desc": "Provides details of users with similar edit histories.",
 	"similareditors-extensionname": "Similar Editors"
 }

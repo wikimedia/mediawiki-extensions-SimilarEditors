@@ -9,6 +9,17 @@
 	"requires": {
 		"MediaWiki": ">= 1.39.0"
 	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SimilarEditors\\": "src/"
+	},
+	"SpecialPages": {
+		"SimilarEditors": {
+			"class": "MediaWiki\\Extension\\SimilarEditors\\SpecialSimilarEditors"
+		}
+	},
+	"ExtensionMessagesFiles": {
+		"SimilarEditorsAliases": "SimilarEditors.alias.php"
+	},
 	"config": {},
 	"MessagesDirs": {
 		"SimilarEditors": [
