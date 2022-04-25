@@ -1,0 +1,19 @@
+{
+	"name": "SimilarEditors",
+	"url": "https://www.mediawiki.org/wiki/Extension:SimilarEditors",
+	"version": "0.0.0",
+	"namemsg": "similareditors-extensionname",
+	"descriptionmsg": "similareditors-desc",
+	"license-name": "MIT",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"config": {},
+	"MessagesDirs": {
+		"SimilarEditors": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
+}
