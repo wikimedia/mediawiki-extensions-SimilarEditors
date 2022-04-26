@@ -4,5 +4,10 @@
 	},
 	"similareditors": "Title for Special:SimilarEditors",
 	"similareditors-desc": "{{desc|name=SimilarEditors|url=https://www.mediawiki.org/wiki/Extension:SimilarEditors}}",
-	"similareditors-extensionname": "{{name}}\nThe name of the extension"
+	"similareditors-extensionname": "{{name}}\nThe name of the extension",
+	"similareditors-form-field-target-label": "Label for a form field on [[Special:SimilarEditors]]",
+	"similareditors-form-field-target-placeholder": "Placeholder for a text input on [[Special:SimilarEditors]]",
+	"similareditors-form-legend": "Legend for the form on [[Special:SimilarEditors]]",
+	"similareditors-form-submit": "Label for the submit button on [[Special:SimilarEditors]]",
+	"similareditors-summary": "Description of what SimilarEditors does, displayed on [[Special:SimilarEditors]]"
 }

@@ -4,5 +4,10 @@
 	},
 	"similareditors": "Similar Editors",
 	"similareditors-desc": "Provides details of users with similar edit histories.",
-	"similareditors-extensionname": "Similar Editors"
+	"similareditors-extensionname": "Similar Editors",
+	"similareditors-form-field-target-label": "Username or IP address:",
+	"similareditors-form-field-target-placeholder": "UserName or 1.1.1.1",
+	"similareditors-form-legend": "Find similar editors",
+	"similareditors-form-submit": "Find",
+	"similareditors-summary": "Find the most similar editors to a given editor based on edit history."
 }

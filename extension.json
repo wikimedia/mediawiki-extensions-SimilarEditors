@@ -12,6 +12,9 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\SimilarEditors\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"MediaWiki\\Extension\\SimilarEditors\\Test\\Integration\\": "tests/phpunit/integration/"
+	},
 	"SpecialPages": {
 		"SimilarEditors": {
 			"class": "MediaWiki\\Extension\\SimilarEditors\\SpecialSimilarEditors"
