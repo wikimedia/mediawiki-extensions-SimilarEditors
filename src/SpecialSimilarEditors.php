@@ -23,14 +23,29 @@ class SpecialSimilarEditors extends SpecialPage {
 				'type' => 'user',
 				'label-message' => 'similareditors-form-field-target-label',
 				'placeholder-message' => 'similareditors-form-field-target-placeholder',
+				'exists' => true,
+				'ipallowed' => true,
+				'required' => true,
 			],
 		];
 
 		$form = HTMLForm::factory( 'ooui', $fields, $this->getContext() );
-		$form->setMethod( 'get' )
+		$form
+			->setMethod( 'get' )
 			->setWrapperLegendMsg( 'similareditors-form-legend' )
 			->setSubmitTextMsg( 'similareditors-form-submit' )
+			->setSubmitCallback( [ $this, 'onSubmit' ] )
 			->prepareForm()
-			->displayForm( false );
+			->show();
+	}
+
+	/**
+	 * Placeholder for the submit callback as required by HTMLForm
+	 *
+	 * @param array $formData
+	 * @return bool
+	 */
+	public function onSubmit( $formData ) {
+		return false;
 	}
 }
