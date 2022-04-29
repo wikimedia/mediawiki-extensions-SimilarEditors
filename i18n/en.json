@@ -9,5 +9,7 @@
 	"similareditors-form-field-target-placeholder": "UserName or 1.1.1.1",
 	"similareditors-form-legend": "Find similar editors",
 	"similareditors-form-submit": "Find",
-	"similareditors-summary": "Find the most similar editors to a given editor based on edit history."
+	"similareditors-summary": "Find the most similar editors to a given editor based on edit history.",
+	"similareditors-survey-freeform-text-label": " ",
+	"similareditors-survey-question": "What other information do you look for when trying to find sockpuppets?"
 }

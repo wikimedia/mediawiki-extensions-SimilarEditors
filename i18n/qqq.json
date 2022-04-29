@@ -9,5 +9,7 @@
 	"similareditors-form-field-target-placeholder": "Placeholder for a text input on [[Special:SimilarEditors]]",
 	"similareditors-form-legend": "Legend for the form on [[Special:SimilarEditors]]",
 	"similareditors-form-submit": "Label for the submit button on [[Special:SimilarEditors]]",
-	"similareditors-summary": "Description of what SimilarEditors does, displayed on [[Special:SimilarEditors]]"
+	"similareditors-summary": "Description of what SimilarEditors does, displayed on [[Special:SimilarEditors]]",
+	"similareditors-survey-freeform-text-label": "Placeholder for a text input in the feedback survey on [[Special:SimilarEditors]]. The placeholder should be blank, but the message must be defined (and not be an empty string) in order for the input to display.",
+	"similareditors-survey-question": "Question asked in the feedback survey on [[Special:SimilarEditors]]"
 }

@@ -2,8 +2,10 @@
 
 namespace MediaWiki\Extension\SimilarEditors;
 
+use Html;
 use HTMLForm;
 use SpecialPage;
+use Status;
 
 class SpecialSimilarEditors extends SpecialPage {
 	public function __construct() {
@@ -18,6 +20,12 @@ class SpecialSimilarEditors extends SpecialPage {
 		$this->checkPermissions();
 		$this->outputHeader();
 
+		$out = $this->getOutput();
+		$out->addModuleStyles( 'ext.similarEditors.styles' );
+
+		// Ensure the correct survey is added, in case multiple are enabled
+		$out->addHTML( Html::element( 'div', [ 'id' => 'similareditors-survey-embed' ] ) );
+
 		$fields = [
 			'Target' => [
 				'type' => 'user',
@@ -26,6 +34,11 @@ class SpecialSimilarEditors extends SpecialPage {
 				'exists' => true,
 				'ipallowed' => true,
 				'required' => true,
+			],
+			'Survey' => [
+				'type' => 'hidden',
+				'name' => 'quicksurvey',
+				'default' => 'similareditors',
 			],
 		];
 
@@ -40,7 +53,10 @@ class SpecialSimilarEditors extends SpecialPage {
 			$form->prepareForm()
 				->displayForm( false );
 		} else {
-			$form->show();
+			$status = $form->showAlways();
+			if ( $status === true || $status instanceof Status && $status->isGood() ) {
+				$this->onSuccess();
+			}
 		}
 	}
 
@@ -51,6 +67,14 @@ class SpecialSimilarEditors extends SpecialPage {
 	 * @return bool
 	 */
 	public function onSubmit( $formData ) {
-		return false;
+		return true;
+	}
+
+	/**
+	 * Show results and feedback survey
+	 */
+	public function onSuccess() {
+		$out = $this->getOutput();
+		$out->addModules( 'ext.quicksurveys.init' );
 	}
 }
