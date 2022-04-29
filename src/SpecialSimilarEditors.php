@@ -34,9 +34,14 @@ class SpecialSimilarEditors extends SpecialPage {
 			->setMethod( 'get' )
 			->setWrapperLegendMsg( 'similareditors-form-legend' )
 			->setSubmitTextMsg( 'similareditors-form-submit' )
-			->setSubmitCallback( [ $this, 'onSubmit' ] )
-			->prepareForm()
-			->show();
+			->setSubmitCallback( [ $this, 'onSubmit' ] );
+
+		if ( $this->getRequest()->getVal( 'wpTarget' ) === null ) {
+			$form->prepareForm()
+				->displayForm( false );
+		} else {
+			$form->show();
+		}
 	}
 
 	/**
