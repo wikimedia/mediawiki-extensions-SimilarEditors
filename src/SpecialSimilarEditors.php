@@ -6,8 +6,18 @@ use HTMLForm;
 use SpecialPage;
 
 class SpecialSimilarEditors extends SpecialPage {
-	public function __construct() {
+
+	/** @var Client */
+	private $similarEditorsClient;
+
+	/**
+	 * @param Client $similarEditorsClient
+	 */
+	public function __construct(
+		Client $similarEditorsClient
+	) {
 		parent::__construct( 'SimilarEditors', 'similareditors', true );
+		$this->similarEditorsClient = $similarEditorsClient;
 	}
 
 	/**

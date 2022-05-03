@@ -20,13 +20,24 @@
 	},
 	"SpecialPages": {
 		"SimilarEditors": {
-			"class": "MediaWiki\\Extension\\SimilarEditors\\SpecialSimilarEditors"
+			"class": "MediaWiki\\Extension\\SimilarEditors\\SpecialSimilarEditors",
+			"services": [
+				"SimilarEditorsClient"
+			]
 		}
 	},
 	"ExtensionMessagesFiles": {
 		"SimilarEditorsAliases": "SimilarEditors.alias.php"
 	},
-	"config": {},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
+	"config": {
+		"SimilarEditorsApiUrl": {
+			"value": false,
+			"description": "API domain"
+		}
+	},
 	"MessagesDirs": {
 		"SimilarEditors": [
 			"i18n"
