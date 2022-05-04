@@ -2,6 +2,9 @@
 	"@metadata": {
 		"authors": []
 	},
+
+	"action-similareditors": "{{doc-action|similareditors}}",
+	"right-similareditors": "{{doc-right|similareditors}}",
 	"similareditors": "Title for Special:SimilarEditors",
 	"similareditors-desc": "{{desc|name=SimilarEditors|url=https://www.mediawiki.org/wiki/Extension:SimilarEditors}}",
 	"similareditors-extensionname": "{{name}}\nThe name of the extension",

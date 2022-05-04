@@ -2,6 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
+	"action-similareditors": "access [[Special:SimilarEditors]]",
+	"right-similareditors": "Access [[Special:SimilarEditors]]",
 	"similareditors": "Similar Editors",
 	"similareditors-desc": "Provides details of users with similar edit histories.",
 	"similareditors-extensionname": "Similar Editors",

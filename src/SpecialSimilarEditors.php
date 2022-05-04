@@ -7,7 +7,7 @@ use SpecialPage;
 
 class SpecialSimilarEditors extends SpecialPage {
 	public function __construct() {
-		parent::__construct( 'SimilarEditors', 'checkuser', true );
+		parent::__construct( 'SimilarEditors', 'similareditors', true );
 	}
 
 	/**

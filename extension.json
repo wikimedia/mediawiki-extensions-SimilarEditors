@@ -9,6 +9,9 @@
 	"requires": {
 		"MediaWiki": ">= 1.39.0"
 	},
+	"AvailableRights": [
+		"similareditors"
+	],
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\SimilarEditors\\": "src/"
 	},
