@@ -5,6 +5,12 @@ namespace MediaWiki\Extension\SimilarEditors;
 class Neighbor {
 
 	/**
+	 * User name of the neighbor
+	 * @var string|null
+	 */
+	private $userText;
+
+	/**
 	 * Number of edits made by the neighbor in the data
 	 *
 	 * @var int|null
@@ -52,6 +58,7 @@ class Neighbor {
 	private $followUp;
 
 	/**
+	 * @param string|null $userText
 	 * @param int|null $numEditsInData
 	 * @param int|null $numPages
 	 * @param float|null $editOverlap
@@ -61,6 +68,7 @@ class Neighbor {
 	 * @param string[]|null $followUp
 	 */
 	public function __construct(
+		$userText = null,
 		$numEditsInData = null,
 		$numPages = null,
 		$editOverlap = null,
@@ -69,6 +77,7 @@ class Neighbor {
 		$hourOverlap = null,
 		$followUp = null
 	) {
+		$this->userText = $userText;
 		$this->numEditsInData = $numEditsInData;
 		$this->numPages = $numPages;
 		$this->editOverlap = $editOverlap;
@@ -76,6 +85,13 @@ class Neighbor {
 		$this->dayOverlap = $dayOverlap;
 		$this->hourOverlap = $hourOverlap;
 		$this->followUp = $followUp;
+	}
+
+	/**
+	 * @return string|null
+	 */
+	public function getUserText(): ?string {
+		return $this->userText;
 	}
 
 	/**

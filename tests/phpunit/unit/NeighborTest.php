@@ -13,6 +13,7 @@ class NeighborTest extends MediaWikiUnitTestCase {
 	public function testDefaultValues() {
 		$neighbor = new Neighbor();
 
+		$this->assertNull( $neighbor->getUserText() );
 		$this->assertNull( $neighbor->getNumEditsInData() );
 		$this->assertNull( $neighbor->getnumPages() );
 		$this->assertNull( $neighbor->getEditOverlap() );
