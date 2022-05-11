@@ -6,7 +6,7 @@ class TimeOverlap {
 	/**
 	 * Similarity score
 	 *
-	 * @var int
+	 * @var float
 	 */
 	private $cosineSimilarity;
 
@@ -19,11 +19,11 @@ class TimeOverlap {
 	private $level;
 
 	/**
-	 * @param int $cosineSimilarity
+	 * @param float $cosineSimilarity
 	 * @param string $level
 	 */
 	public function __construct(
-		int $cosineSimilarity,
+		float $cosineSimilarity,
 		string $level
 	) {
 		$this->cosineSimilarity = $cosineSimilarity;
@@ -31,9 +31,9 @@ class TimeOverlap {
 	}
 
 	/**
-	 * @return int
+	 * @return float
 	 */
-	public function getCosineSimilarity(): int {
+	public function getCosineSimilarity(): float {
 		return $this->cosineSimilarity;
 	}
 

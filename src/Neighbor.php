@@ -21,14 +21,14 @@ class Neighbor {
 	/**
 	 * Number of overlapping edited pages divided by number of pages edited by queried editor (between 0 and 1)
 	 *
-	 * @var int|null
+	 * @var float|null
 	 */
 	private $editOverlap;
 
 	/**
 	 * Number of overlapping edited pages divided by number of pages edited by the neighbor (between 0 and 1)
 	 *
-	 * @var int|null
+	 * @var float|null
 	 */
 	private $editOverlapInv;
 
@@ -54,8 +54,8 @@ class Neighbor {
 	/**
 	 * @param int|null $numEditsInData
 	 * @param int|null $numPages
-	 * @param int|null $editOverlap
-	 * @param int|null $editOverlapInv
+	 * @param float|null $editOverlap
+	 * @param float|null $editOverlapInv
 	 * @param TimeOverlap|null $dayOverlap
 	 * @param TimeOverlap|null $hourOverlap
 	 * @param string[]|null $followUp
@@ -93,16 +93,16 @@ class Neighbor {
 	}
 
 	/**
-	 * @return int|null
+	 * @return float|null
 	 */
-	public function getEditOverlap(): ?int {
+	public function getEditOverlap(): ?float {
 		return $this->editOverlap;
 	}
 
 	/**
-	 * @return int|null
+	 * @return float|null
 	 */
-	public function getEditOverlapInv(): ?int {
+	public function getEditOverlapInv(): ?float {
 		return $this->editOverlapInv;
 	}
 
