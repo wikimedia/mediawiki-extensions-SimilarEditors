@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Extension\SimilarEditors\MockSimilarEditorsClient;
+use MediaWiki\Extension\SimilarEditors\ResultsFormatterFactory;
 use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
 use MediaWiki\MediaWikiServices;
 
@@ -23,5 +24,10 @@ return [
 			);
 		}
 		return new MockSimilarEditorsClient();
+	},
+	'SimilarEditorsResultsFormatterFactory' => static function ( MediaWikiServices $services ) {
+		return new ResultsFormatterFactory(
+			$services->getUserFactory()
+		);
 	},
 ];

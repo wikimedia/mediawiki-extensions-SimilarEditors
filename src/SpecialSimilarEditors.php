@@ -12,14 +12,20 @@ class SpecialSimilarEditors extends SpecialPage {
 	/** @var Client */
 	private $similarEditorsClient;
 
+	/** @var ResultsFormatterFactory */
+	private $resultsFormatterFactory;
+
 	/**
 	 * @param Client $similarEditorsClient
+	 * @param ResultsFormatterFactory $resultsFormatterFactory
 	 */
 	public function __construct(
-		Client $similarEditorsClient
+		Client $similarEditorsClient,
+		ResultsFormatterFactory $resultsFormatterFactory
 	) {
 		parent::__construct( 'SimilarEditors', 'similareditors', true );
 		$this->similarEditorsClient = $similarEditorsClient;
+		$this->resultsFormatterFactory = $resultsFormatterFactory;
 	}
 
 	/**
@@ -31,6 +37,7 @@ class SpecialSimilarEditors extends SpecialPage {
 		$this->outputHeader();
 
 		$out = $this->getOutput();
+		$out->addModuleStyles( 'mediawiki.pager.styles' );
 		$out->addModuleStyles( 'ext.similarEditors.styles' );
 
 		// Ensure the correct survey is added, in case multiple are enabled
@@ -86,5 +93,17 @@ class SpecialSimilarEditors extends SpecialPage {
 	public function onSuccess() {
 		$out = $this->getOutput();
 		$out->addModules( 'ext.quicksurveys.init' );
+
+		$target = $this->getRequest()->getVal( 'wpTarget' );
+		$neighbors = $this->similarEditorsClient->getSimilarEditors( $target );
+
+		if ( $neighbors !== null ) {
+			$resultsFormatter = $this->resultsFormatterFactory->createFormatter(
+				$this->getLanguage()
+			);
+			$out->addHtml( $resultsFormatter->formatResults( $neighbors ) );
+		} else {
+			$out->addHtml( $this->msg( 'similareditors-no-results' ) );
+		}
 	}
 }

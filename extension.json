@@ -25,7 +25,8 @@
 		"SimilarEditors": {
 			"class": "MediaWiki\\Extension\\SimilarEditors\\SpecialSimilarEditors",
 			"services": [
-				"SimilarEditorsClient"
+				"SimilarEditorsClient",
+				"SimilarEditorsResultsFormatterFactory"
 			]
 		}
 	},
