@@ -7,8 +7,20 @@ use MediaWiki\MediaWikiServices;
 return [
 	'SimilarEditorsClient' => static function ( MediaWikiServices $services ) {
 		$config = $services->getMainConfig();
-		if ( $config->get( 'SimilarEditorsApiUrl' ) ) {
-			return new SimilarEditorsClient();
+		$apiUrl = $config->get( 'SimilarEditorsApiUrl' );
+		$apiUser = $config->get( 'SimilarEditorsApiUser' );
+		$apiPassword = $config->get( 'SimilarEditorsApiPassword' );
+		if (
+			$apiUrl &&
+			$apiUser &&
+			$apiPassword
+		) {
+			return new SimilarEditorsClient(
+				$services->getHttpRequestFactory(),
+				$apiUrl,
+				$apiUser,
+				$apiPassword
+			);
 		}
 		return new MockSimilarEditorsClient();
 	},

@@ -46,6 +46,14 @@
 		"SimilarEditorsApiUrl": {
 			"value": false,
 			"description": "API domain"
+		},
+		"SimilarEditorsApiUser": {
+			"value": false,
+			"description": "API user"
+		},
+		"SimilarEditorsApiPassword": {
+			"value": false,
+			"description": "API password"
 		}
 	},
 	"MessagesDirs": {

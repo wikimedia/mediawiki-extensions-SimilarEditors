@@ -16,7 +16,7 @@ interface Client {
 	 * Retrieve similar editors
 	 *
 	 * @param string $target
-	 * @return Neighbor[]
+	 * @return Neighbor[]|null
 	 */
 	public function getSimilarEditors( string $target );
 }
