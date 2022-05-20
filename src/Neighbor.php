@@ -6,80 +6,70 @@ class Neighbor {
 
 	/**
 	 * User name of the neighbor
-	 * @var string|null
+	 * @var string
 	 */
 	private $userText;
 
 	/**
 	 * Number of edits made by the neighbor in the data
 	 *
-	 * @var int|null
+	 * @var int
 	 */
 	private $numEditsInData;
 
 	/**
-	 * Number of pages edited by the neighbor in the data
-	 *
-	 * @var int|null
-	 */
-	private $numPages;
-
-	/**
 	 * Number of overlapping edited pages divided by number of pages edited by queried editor (between 0 and 1)
 	 *
-	 * @var float|null
+	 * @var float
 	 */
 	private $editOverlap;
 
 	/**
 	 * Number of overlapping edited pages divided by number of pages edited by the neighbor (between 0 and 1)
 	 *
-	 * @var float|null
+	 * @var float
 	 */
 	private $editOverlapInv;
 
 	/**
 	 * Level of temporal overlap (editing the same days of the week) with queried editor
 	 *
-	 * @var TimeOverlap|null
+	 * @var TimeOverlap
 	 */
 	private $dayOverlap;
 
 	/**
 	 * Level of temporal overlap (editing the same hours of the day) with queried editor
-	 * @var TimeOverlap|null
+	 * @var TimeOverlap
 	 */
 	private $hourOverlap;
 
 	/**
 	 * Additional tool links in API response for follow-up on data
-	 * @var string[]|null
+	 * @var string[]
 	 */
 	private $followUp;
 
 	/**
-	 * @param string|null $userText
-	 * @param int|null $numEditsInData
-	 * @param int|null $numPages
-	 * @param float|null $editOverlap
-	 * @param float|null $editOverlapInv
-	 * @param TimeOverlap|null $dayOverlap
-	 * @param TimeOverlap|null $hourOverlap
-	 * @param string[]|null $followUp
+	 * @param string $userText
+	 * @param int $numEditsInData
+	 * @param float $editOverlap
+	 * @param float $editOverlapInv
+	 * @param TimeOverlap $dayOverlap
+	 * @param TimeOverlap $hourOverlap
+	 * @param string[] $followUp
 	 */
 	public function __construct(
-		$userText = null,
-		$numEditsInData = null,
-		$numPages = null,
-		$editOverlap = null,
-		$editOverlapInv = null,
-		$dayOverlap = null,
-		$hourOverlap = null,
-		$followUp = null
+		$userText,
+		$numEditsInData,
+		$editOverlap,
+		$editOverlapInv,
+		$dayOverlap,
+		$hourOverlap,
+		$followUp
 	) {
 		$this->userText = $userText;
 		$this->numEditsInData = $numEditsInData;
-		$this->numPages = $numPages;
 		$this->editOverlap = $editOverlap;
 		$this->editOverlapInv = $editOverlapInv;
 		$this->dayOverlap = $dayOverlap;
@@ -88,58 +78,51 @@ class Neighbor {
 	}
 
 	/**
-	 * @return string|null
+	 * @return string
 	 */
-	public function getUserText(): ?string {
+	public function getUserText(): string {
 		return $this->userText;
 	}
 
 	/**
-	 * @return int|null
+	 * @return int
 	 */
-	public function getNumEditsInData(): ?int {
+	public function getNumEditsInData(): int {
 		return $this->numEditsInData;
 	}
 
 	/**
-	 * @return int|null
+	 * @return float
 	 */
-	public function getnumPages(): ?int {
-		return $this->numPages;
-	}
-
-	/**
-	 * @return float|null
-	 */
-	public function getEditOverlap(): ?float {
+	public function getEditOverlap(): float {
 		return $this->editOverlap;
 	}
 
 	/**
-	 * @return float|null
+	 * @return float
 	 */
-	public function getEditOverlapInv(): ?float {
+	public function getEditOverlapInv(): float {
 		return $this->editOverlapInv;
 	}
 
 	/**
-	 * @return TimeOverlap|null
+	 * @return TimeOverlap
 	 */
-	public function getDayOverlap(): ?TimeOverlap {
+	public function getDayOverlap(): TimeOverlap {
 		return $this->dayOverlap;
 	}
 
 	/**
-	 * @return TimeOverlap|null
+	 * @return TimeOverlap
 	 */
-	public function getHourOverlap(): ?TimeOverlap {
+	public function getHourOverlap(): TimeOverlap {
 		return $this->hourOverlap;
 	}
 
 	/**
-	 * @return string[]|null
+	 * @return string[]
 	 */
-	public function getFollowUp(): ?array {
+	public function getFollowUp(): array {
 		return $this->followUp;
 	}
 }

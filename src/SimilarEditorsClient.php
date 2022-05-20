@@ -64,20 +64,19 @@ class SimilarEditorsClient implements Client {
 			if ( $json ) {
 				return array_map( static function ( $result ) {
 					return new Neighbor(
-						$result['user_text'] ?? null,
-						$result['num_edits_in_data'] ?? null,
-						$result['num_pages'] ?? null,
-						$result['edit-overlap'] ?? null,
-						$result['edit-overlap-inv'] ?? null,
-						isset( $result['day-overlap'] ) ? new TimeOverlap(
+						$result['user_text'],
+						$result['num_edits_in_data'],
+						$result['edit-overlap'],
+						$result['edit-overlap-inv'],
+						new TimeOverlap(
 							$result['day-overlap']['cos-sim'],
 							$result['day-overlap']['level']
-						) : null,
-						isset( $result['hour-overlap'] ) ? new TimeOverlap(
+						),
+						new TimeOverlap(
 							$result['hour-overlap']['cos-sim'],
 							$result['hour-overlap']['level']
-						) : null,
-						$result['follow-up'] ?? null );
+						),
+						$result['follow-up'] ?? [] );
 				}, $json['results'] );
 			}
 			return null;
