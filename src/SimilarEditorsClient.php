@@ -61,7 +61,7 @@ class SimilarEditorsClient implements Client {
 		], __METHOD__ );
 		if ( $response ) {
 			$json = json_decode( $response, true );
-			if ( $json ) {
+			if ( $json && isset( $json['results'] ) ) {
 				return array_map( static function ( $result ) {
 					return new Neighbor(
 						$result['user_text'],
