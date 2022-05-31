@@ -7,7 +7,7 @@ use MediaWikiUnitTestCase;
 
 /**
  * @group SimilarEditors
- * @covers \MediaWiki\Extension\SimilarEditors\Neighbor
+ * @covers \MediaWiki\Extension\SimilarEditors\Editor
  */
 class EditorTest extends MediaWikiUnitTestCase {
 	public function testDefaultValues() {
