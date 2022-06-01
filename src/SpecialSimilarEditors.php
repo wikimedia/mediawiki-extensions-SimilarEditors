@@ -48,7 +48,8 @@ class SpecialSimilarEditors extends SpecialPage {
 				'type' => 'user',
 				'label-message' => 'similareditors-form-field-target-label',
 				'placeholder-message' => 'similareditors-form-field-target-placeholder',
-				'exists' => true,
+				// TODO: revert as part of T309675
+				'exists' => false,
 				'ipallowed' => true,
 				'required' => true,
 			],
