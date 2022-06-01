@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"MathXplore"
+		]
+	},
+	"similareditors-form-field-target-label": "利用者名または IP アドレス",
+	"similareditors-form-submit": "検索",
+	"similareditors-no-results": "結果はありません。",
+	"similareditors-overlap-level-high": "高",
+	"similareditors-overlap-level-low": "低",
+	"similareditors-overlap-level-medium": "中",
+	"similareditors-results-user": "利用者"
+}

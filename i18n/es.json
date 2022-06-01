@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Enly M"
+		]
+	},
+	"action-similareditors": "Entrada [[Special:SimilarEditors]]",
+	"right-similareditors": "Entrada [[Special:SimilarEditors]]",
+	"similareditors": "Editores similares",
+	"similareditors-desc": "Proporcionar detalles de usuarios con historiales de edición similares.",
+	"similareditors-form-field-target-label": "Nombre de usuario o dirección IP",
+	"similareditors-form-field-target-placeholder": "Nombre de usuario or 1.1.1.1",
+	"similareditors-form-legend": "Encontrar editores similares",
+	"similareditors-form-submit": "Buscar",
+	"similareditors-no-results": "No hay resultados.",
+	"similareditors-overlap-level-high": "Alta",
+	"similareditors-overlap-level-low": "Bajo",
+	"similareditors-overlap-level-medium": "Medio",
+	"similareditors-overlap-level-no-overlap": "Sin superposición",
+	"similareditors-results-day-overlap": "Coincidencia de día",
+	"similareditors-results-edit-overlap": "Coincidencia de edición",
+	"similareditors-results-edits": "Modificaciones en los datos",
+	"similareditors-results-hour-overlap": "Coincidencia de hora",
+	"similareditors-results-inverse-edit-overlap": "Coincidencia de edición inversa.",
+	"similareditors-results-user": "Usuario",
+	"similareditors-summary": "Encontrar los editores más similares a un editor determinado según el historial de edición.",
+	"similareditors-survey-question": "¿Encontro los resultados utiles? ¿Que otra informacion busca cuando   trata de encontrar \"impostores\"?"
+}
