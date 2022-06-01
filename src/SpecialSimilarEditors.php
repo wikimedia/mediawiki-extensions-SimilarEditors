@@ -35,6 +35,7 @@ class SpecialSimilarEditors extends SpecialPage {
 		$this->setHeaders();
 		$this->checkPermissions();
 		$this->outputHeader();
+		$this->addHelpLink( 'Help:Extension:SimilarEditors' );
 
 		$out = $this->getOutput();
 		$out->addModuleStyles( 'mediawiki.pager.styles' );
