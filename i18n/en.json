@@ -22,6 +22,7 @@
 	"similareditors-results-hour-overlap": "Hour overlap",
 	"similareditors-results-inverse-edit-overlap": "Inverse edit overlap",
 	"similareditors-results-user": "User",
+	"similareditors-results-user-timeline": "timeline",
 	"similareditors-summary": "Find the most similar editors to a given editor based on edit history.",
 	"similareditors-survey-freeform-text-label": " ",
 	"similareditors-survey-question": "Did you find the results helpful? What other information do you look for when trying to find sockpuppets?"

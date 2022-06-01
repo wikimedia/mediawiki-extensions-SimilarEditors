@@ -103,7 +103,7 @@ class SpecialSimilarEditors extends SpecialPage {
 			$resultsFormatter = $this->resultsFormatterFactory->createFormatter(
 				$this->getLanguage()
 			);
-			$out->addHtml( $resultsFormatter->formatResults( $neighbors ) );
+			$out->addHtml( $resultsFormatter->formatResults( $target, $neighbors ) );
 		} else {
 			$out->addHtml( $this->msg( 'similareditors-no-results' ) );
 		}

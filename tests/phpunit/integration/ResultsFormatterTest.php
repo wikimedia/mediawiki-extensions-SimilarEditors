@@ -32,10 +32,13 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 			$userFactory,
 			$language
 		);
-		$results = $resultsFormatter->formatResults( [
-			$this->createMock( Neighbor::class ),
-			$this->createMock( Neighbor::class ),
-		] );
+		$results = $resultsFormatter->formatResults(
+			'targetUser',
+			[
+				$this->createMock( Neighbor::class ),
+				$this->createMock( Neighbor::class ),
+			]
+		);
 
 		$this->assertStringContainsString(
 			'<table class="mw-datatable sortable">',

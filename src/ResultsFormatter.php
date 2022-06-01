@@ -41,10 +41,11 @@ class ResultsFormatter {
 	}
 
 	/**
+	 * @param string $target
 	 * @param Neighbor[] $neighbors
 	 * @return string
 	 */
-	public function formatResults( array $neighbors ): string {
+	public function formatResults( string $target, array $neighbors ): string {
 		$headCells = '';
 		foreach ( self::PROPERTIES as $property ) {
 			// For grepping. The following messages can be used here:
@@ -62,7 +63,7 @@ class ResultsFormatter {
 
 		$bodyRows = '';
 		foreach ( $neighbors as $neighbor ) {
-			$bodyRows .= $this->formatRow( $neighbor );
+			$bodyRows .= $this->formatRow( $target, $neighbor );
 		}
 		$body = Html::rawElement( 'tbody', [], $bodyRows );
 
@@ -74,14 +75,15 @@ class ResultsFormatter {
 	}
 
 	/**
+	 * @param string $target
 	 * @param Neighbor $neighbor
 	 * @return string
 	 */
-	private function formatRow( Neighbor $neighbor ): string {
+	private function formatRow( string $target, Neighbor $neighbor ): string {
 		$row = Html::openElement( 'tr', [] );
 
 		foreach ( self::PROPERTIES as $property ) {
-			$row .= Html::rawElement( 'td', [], $this->formatRowProperty( $neighbor, $property ) ) . "\n";
+			$row .= Html::rawElement( 'td', [], $this->formatRowProperty( $target, $neighbor, $property ) ) . "\n";
 		}
 
 		$row .= Html::closeElement( 'tr' );
@@ -90,11 +92,13 @@ class ResultsFormatter {
 	}
 
 	/**
+	 * @param string $target
 	 * @param Neighbor $neighbor
 	 * @param string $property
 	 * @return string
 	 */
 	private function formatRowProperty(
+		string $target,
 		Neighbor $neighbor,
 		string $property
 	): string {
@@ -106,7 +110,16 @@ class ResultsFormatter {
 					UserRigorOptions::RIGOR_NONE
 				);
 				// TODO: revert as part of T309675
-				return Linker::userLink( 0, 'en>' . $user->getName() );
+				return Linker::userLink( 0, 'en>' . $user->getName() ) .
+					' ' . $this->msg( 'parentheses-start' ) .
+					// @phan-suppress-next-line SecurityCheck-DoubleEscaped
+					Linker::makeExternalLink(
+						'https://interaction-timeline.toolforge.org/' .
+							'?wiki=enwiki&user=' . $target . '&user=' . $user->getName(),
+						$this->msg( 'similareditors-results-user-timeline' )->parse(),
+						false
+					) .
+					$this->msg( 'parentheses-end' );
 			case 'day-overlap':
 				return $this->msg(
 					$this->getOverlapMessageKey( $neighbor->getDayOverlap()->getLevel() )
