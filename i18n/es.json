@@ -1,15 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ciencia Al Poder",
 			"Enly M"
 		]
 	},
 	"action-similareditors": "Entrada [[Special:SimilarEditors]]",
 	"right-similareditors": "Entrada [[Special:SimilarEditors]]",
 	"similareditors": "Editores similares",
-	"similareditors-desc": "Proporcionar detalles de usuarios con historiales de edición similares.",
+	"similareditors-desc": "Proporciona detalles de usuarios con historiales de edición similares.",
 	"similareditors-form-field-target-label": "Nombre de usuario o dirección IP",
-	"similareditors-form-field-target-placeholder": "Nombre de usuario or 1.1.1.1",
+	"similareditors-form-field-target-placeholder": "Nombre de usuario o 1.1.1.1",
 	"similareditors-form-legend": "Encontrar editores similares",
 	"similareditors-form-submit": "Buscar",
 	"similareditors-no-results": "No hay resultados.",

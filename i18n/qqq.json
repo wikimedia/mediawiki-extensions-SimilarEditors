@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Amire80"
+		]
 	},
 	"action-similareditors": "{{doc-action|similareditors}}",
 	"right-similareditors": "{{doc-right|similareditors}}",
@@ -12,7 +14,7 @@
 	"similareditors-form-legend": "Legend for the form on [[Special:SimilarEditors]]",
 	"similareditors-form-submit": "Label for the submit button on [[Special:SimilarEditors]]",
 	"similareditors-no-results": "Notice that might display on [[Special:SimilarEditors]] after form submission",
-	"similareditors-overlap-level-high": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-medium}}, {{msg-mw|similareditors-overlap-level-none}}.",
+	"similareditors-overlap-level-high": "Qualitative description of a similarity score between two editors. Adjective that describes \"overlap\". See also:\n* {{msg-mw|similareditors-overlap-level-low}}\n* {{msg-mw|similareditors-overlap-level-medium}}\n* {{msg-mw|similareditors-overlap-level-none}}",
 	"similareditors-overlap-level-low": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-medium}}, {{msg-mw|similareditors-overlap-level-none}}.",
 	"similareditors-overlap-level-medium": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-none}}.",
 	"similareditors-overlap-level-no-overlap": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-medium}}.",
