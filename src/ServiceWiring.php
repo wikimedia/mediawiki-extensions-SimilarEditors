@@ -5,6 +5,11 @@ use MediaWiki\Extension\SimilarEditors\ResultsFormatterFactory;
 use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
 use MediaWiki\MediaWikiServices;
 
+// PHPUnit doesn't understand code coverage for code outside of classes/functions,
+// like service wiring files. This *is* tested though, see
+// tests/phpunit/integration/ServiceWiringTest.php
+// @codeCoverageIgnoreStart
+
 return [
 	'SimilarEditorsClient' => static function ( MediaWikiServices $services ) {
 		$config = $services->getMainConfig();
@@ -31,3 +36,5 @@ return [
 		);
 	},
 ];
+
+// @codeCoverageIgnoreEnd
