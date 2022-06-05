@@ -55,7 +55,7 @@ class SimilarEditorsClient implements Client {
 	 * @inheritDoc
 	 */
 	public function getSimilarEditors( string $editor ) {
-		$response = $this->httpRequestFactory->get( $this->apiUrl . '?usertext=' . $editor, [
+		$response = $this->httpRequestFactory->get( $this->apiUrl . '?usertext=' . urlencode( $editor ), [
 			'username' => $this->apiUser,
 			'password' => $this->apiPassword
 		], __METHOD__ );
