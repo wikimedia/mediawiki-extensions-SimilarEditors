@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Asma"
+		]
+	},
+	"action-similareditors": "دخول [[Special:SimilarEditors]]",
+	"right-similareditors": "دخول [[Special:SimilarEditors]]",
+	"similareditors": "محررين متشابهين",
+	"similareditors-desc": "يوفر تفاصيل عن المستخدمين الذين لديهم تاريخ تحرير مماثل.",
+	"similareditors-form-field-target-label": "اسم المستخدم أو عنوان IP:",
+	"similareditors-form-field-target-placeholder": "اسم المستخدم أو 1.1.1.1",
+	"similareditors-form-legend": "ابحث عن محررين متشابهين",
+	"similareditors-form-submit": "ابحث",
+	"similareditors-no-results": "لا توجد نتائج.",
+	"similareditors-overlap-level-high": "مرتفع",
+	"similareditors-overlap-level-low": "منخفض",
+	"similareditors-overlap-level-medium": "متوسط",
+	"similareditors-overlap-level-no-overlap": "لا تداخل",
+	"similareditors-results-day-overlap": "تداخل اليوم",
+	"similareditors-results-edit-overlap": "تداخل التحرير",
+	"similareditors-results-hour-overlap": "تداخل الساعة",
+	"similareditors-results-user": "مستخدم",
+	"similareditors-survey-question": "هل وجدت النتائج مفيدة؟ ما هي المعلومات الأخرى التي تبحث عنها عند محاولة العثور على دمى جورب؟"
+}

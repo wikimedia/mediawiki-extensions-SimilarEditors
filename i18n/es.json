@@ -5,8 +5,8 @@
 			"Enly M"
 		]
 	},
-	"action-similareditors": "Entrada [[Special:SimilarEditors]]",
-	"right-similareditors": "Entrada [[Special:SimilarEditors]]",
+	"action-similareditors": "acceder a [[Special:SimilarEditors]]",
+	"right-similareditors": "Acceder a [[Special:SimilarEditors]]",
 	"similareditors": "Editores similares",
 	"similareditors-desc": "Proporciona detalles de usuarios con historiales de edición similares.",
 	"similareditors-form-field-target-label": "Nombre de usuario o dirección IP",
@@ -25,5 +25,5 @@
 	"similareditors-results-inverse-edit-overlap": "Coincidencia de edición inversa.",
 	"similareditors-results-user": "Usuario",
 	"similareditors-summary": "Encontrar los editores más similares a un editor determinado según el historial de edición.",
-	"similareditors-survey-question": "¿Encontro los resultados utiles? ¿Que otra informacion busca cuando   trata de encontrar \"impostores\"?"
+	"similareditors-survey-question": "¿Encontraste útiles los resultados? ¿Qué otra información buscas cuando tratas de encontrar \"impostores\"?"
 }
