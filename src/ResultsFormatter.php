@@ -105,7 +105,8 @@ class ResultsFormatter {
 					// May be an IP address
 					UserRigorOptions::RIGOR_NONE
 				);
-				return Linker::userLink( $user->getId(), $user->getName() );
+				// TODO: revert as part of T309675
+				return Linker::userLink( 0, 'en>' . $user->getName() );
 			case 'day-overlap':
 				return $this->msg(
 					$this->getOverlapMessageKey( $neighbor->getDayOverlap()->getLevel() )
