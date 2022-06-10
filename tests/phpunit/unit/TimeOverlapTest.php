@@ -14,8 +14,8 @@ class TimeOverlapTest extends MediaWikiUnitTestCase {
 	public function testDefaultValues() {
 		$timeOverlap = new TimeOverlap( 1.134, 'foo' );
 		$this->assertNotNull( $timeOverlap );
-		$this->assertisFloat( $timeOverlap->getCosineSimilarity() );
-		$this->assertIsString( $timeOverlap->getLevel() );
+		$this->assertSame( 1.134, $timeOverlap->getCosineSimilarity() );
+		$this->assertSame( 'foo', $timeOverlap->getLevel() );
 	}
 
 }
