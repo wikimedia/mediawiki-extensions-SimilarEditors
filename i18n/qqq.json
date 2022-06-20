@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Robby"
 		]
 	},
 	"action-similareditors": "{{doc-action|similareditors}}",
@@ -16,14 +17,14 @@
 	"similareditors-no-results": "Notice that might display on [[Special:SimilarEditors]] after form submission",
 	"similareditors-overlap-level-high": "Qualitative description of a similarity score between two editors. Adjective that describes \"overlap\". See also:\n* {{msg-mw|similareditors-overlap-level-low}}\n* {{msg-mw|similareditors-overlap-level-medium}}\n* {{msg-mw|similareditors-overlap-level-none}}",
 	"similareditors-overlap-level-low": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-medium}}, {{msg-mw|similareditors-overlap-level-none}}.",
-	"similareditors-overlap-level-medium": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-none}}.",
+	"similareditors-overlap-level-medium": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-none}}.\n{{identical|Medium}}",
 	"similareditors-overlap-level-no-overlap": "Qualitative description of a similarity score between two editors. See also {{msg-mw|similareditors-overlap-level-high}}, {{msg-mw|similareditors-overlap-level-low}}, {{msg-mw|similareditors-overlap-level-medium}}.",
 	"similareditors-results-day-overlap": "Column heading in results table",
 	"similareditors-results-edit-overlap": "Column heading in results table",
 	"similareditors-results-edits": "Column heading in results table",
 	"similareditors-results-hour-overlap": "Column heading in results table",
 	"similareditors-results-inverse-edit-overlap": "Column heading in results table",
-	"similareditors-results-user": "Column heading in results table",
+	"similareditors-results-user": "Column heading in results table\n{{identical|User}}",
 	"similareditors-summary": "Description of what SimilarEditors does, displayed on [[Special:SimilarEditors]]",
 	"similareditors-survey-freeform-text-label": "Placeholder for a text input in the feedback survey on [[Special:SimilarEditors]]. The placeholder should be blank, but the message must be defined (and not be an empty string) in order for the input to display.",
 	"similareditors-survey-question": "Question asked in the feedback survey on [[Special:SimilarEditors]]"
