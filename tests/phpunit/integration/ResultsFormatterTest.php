@@ -5,9 +5,11 @@ namespace MediaWiki\Extension\SimilarEditors\Test\Integration;
 use Language;
 use MediaWiki\Extension\SimilarEditors\Neighbor;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatter;
+use MediaWiki\Extension\SimilarEditors\TimeOverlap;
 use MediaWiki\User\UserFactory;
 use MediaWikiIntegrationTestCase;
 use User;
+use Wikimedia\TestingAccessWrapper;
 
 /**
  * @group SimilarEditors
@@ -60,5 +62,49 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 			$results,
 			'table should contain second row and cells'
 		);
+	}
+
+	/**
+	 * @dataProvider provideFormatRowProperty
+	 * @covers \MediaWiki\Extension\SimilarEditors\ResultsFormatter::formatRowProperty
+	 */
+	public function testFormatRowProperty( $expected, $input ) {
+		$userFactory = $this->createMock( UserFactory::class );
+		$language = $this->createMock( Language::class );
+		$user = $this->createMock( User::class );
+
+		$userFactory->method( 'newFromName' )
+			->willReturn( $user );
+		$user->method( 'getName' )
+			->willReturn( 'SomeUser' );
+
+		$wrapper = TestingAccessWrapper::newFromObject( new ResultsFormatter( $userFactory, $language ) );
+		$neighbor = new Neighbor(
+			'SomeUser',
+			100,
+			0.2,
+			0.4,
+			new TimeOverlap( 0.6, 'medium' ),
+			new TimeOverlap( 0.8, 'high' ),
+			[]
+		);
+
+		$this->assertSame( $expected, $wrapper->formatRowProperty( 'targetUser', $neighbor, $input ) );
+	}
+
+	public function provideFormatRowProperty() {
+		return [
+			'edits' => [ '100' , 'edits' ],
+			'edit-overlap' => [ '0.2' , 'edit-overlap' ],
+			'hour-overlap' => [ 'High' , 'hour-overlap' ],
+			'day-overlap' => [ 'Medium' , 'day-overlap' ],
+			'inverse-edit-overlap' => [ '0.4' , 'inverse-edit-overlap' ],
+			'user' => [
+				'<span class="mw-userlink mw-extuserlink mw-anonuserlink"><bdi>en&gt;SomeUser</bdi></span> ' .
+				'(<a class="external" rel="nofollow" href="https://interaction-timeline.toolforge.org/' .
+				'?wiki=enwiki&amp;user=targetUser&amp;user=SomeUser">timeline</a>)',
+				'user'
+			]
+		];
 	}
 }
