@@ -8,6 +8,7 @@
 	"right-similareditors": "Zugriff auf [[Special:SimilarEditors]]",
 	"similareditors": "Ähnliche Benutzer",
 	"similareditors-desc": "Liefert Details über Benutzer mit ähnlichen Bearbeitungshistorien.",
+	"similareditors-extensionname": "Ähnliche Benutzer",
 	"similareditors-form-field-target-label": "Benutzername oder IP-Adresse:",
 	"similareditors-form-field-target-placeholder": "Benutzername oder 1.1.1.1",
 	"similareditors-form-legend": "Ähnliche Bearbeiter finden",
@@ -23,6 +24,7 @@
 	"similareditors-results-hour-overlap": "Stunden-Überschneidungen",
 	"similareditors-results-inverse-edit-overlap": "Überschneidung der Bearbeitung invertieren",
 	"similareditors-results-user": "Benutzer",
+	"similareditors-results-user-timeline": "Zeitleiste",
 	"similareditors-summary": "Sucht die ähnlichsten Benutzer zu einem bestimmten Benutzer anhand der Bearbeitungshistorie.",
 	"similareditors-survey-question": "Fandest du die Ergebnisse hilfreich? Nach welchen anderen Informationen suchst du, wenn du versuchst, Sockenpuppen zu finden?"
 }
