@@ -115,7 +115,8 @@ class ResultsFormatter {
 					// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 					Linker::makeExternalLink(
 						'https://interaction-timeline.toolforge.org/' .
-							'?wiki=enwiki&user=' . $target . '&user=' . $user->getName(),
+							'?wiki=enwiki&user=' . urlencode( $target ) .
+							'&user=' . urlencode( $user->getName() ),
 						$this->msg( 'similareditors-results-user-timeline' )->parse(),
 						false
 					) .
