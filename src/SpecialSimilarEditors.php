@@ -63,7 +63,7 @@ class SpecialSimilarEditors extends SpecialPage {
 
 		$this->form = HTMLForm::factory( 'ooui', $fields, $this->getContext() );
 		$this->form
-			->setMethod( 'get' )
+			->setMethod( 'post' )
 			->setWrapperLegendMsg( 'similareditors-form-legend' )
 			->setSubmitTextMsg( 'similareditors-form-submit' )
 			->setSubmitCallback( [ $this, 'onSubmit' ] );
