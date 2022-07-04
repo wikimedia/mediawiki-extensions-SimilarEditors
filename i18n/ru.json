@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaganer"
+		]
+	},
+	"action-similareditors": "доступ к [[Special:SimilarEditors]]",
+	"right-similareditors": "Доступ к [[Special:SimilarEditors]]"
+}
