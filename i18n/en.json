@@ -6,6 +6,7 @@
 	"right-similareditors": "Access [[Special:SimilarEditors]]",
 	"similareditors": "Similar Editors",
 	"similareditors-desc": "Provides details of users with similar edit histories.",
+	"similareditors-error-default": "Something has gone wrong, we’re looking into it.",
 	"similareditors-extensionname": "Similar Editors",
 	"similareditors-form-field-target-label": "Username or IP address:",
 	"similareditors-form-field-target-placeholder": "UserName or 1.1.1.1",

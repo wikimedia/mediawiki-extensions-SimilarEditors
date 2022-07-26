@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\SimilarEditors;
 
 use Html;
 use HTMLForm;
+use OOUI\MessageWidget;
 use SpecialPage;
 use Status;
 
@@ -14,6 +15,9 @@ class SpecialSimilarEditors extends SpecialPage {
 
 	/** @var ResultsFormatterFactory */
 	private $resultsFormatterFactory;
+
+	/** @var HTMLForm */
+	private $form;
 
 	/**
 	 * @param Client $similarEditorsClient
@@ -61,18 +65,18 @@ class SpecialSimilarEditors extends SpecialPage {
 			],
 		];
 
-		$form = HTMLForm::factory( 'ooui', $fields, $this->getContext() );
-		$form
+		$this->form = HTMLForm::factory( 'ooui', $fields, $this->getContext() );
+		$this->form
 			->setMethod( 'get' )
 			->setWrapperLegendMsg( 'similareditors-form-legend' )
 			->setSubmitTextMsg( 'similareditors-form-submit' )
 			->setSubmitCallback( [ $this, 'onSubmit' ] );
 
 		if ( $this->getRequest()->getVal( 'wpTarget' ) === null ) {
-			$form->prepareForm()
+			$this->form->prepareForm()
 				->displayForm( false );
 		} else {
-			$status = $form->showAlways();
+			$status = $this->form->show();
 			if ( $status === true || $status instanceof Status && $status->isGood() ) {
 				$this->onSuccess();
 			}
@@ -90,22 +94,35 @@ class SpecialSimilarEditors extends SpecialPage {
 	}
 
 	/**
-	 * Show results and feedback survey
+	 * Handle successful form submission.
+	 *
+	 * This includes handling errors from the Similarusers service.
 	 */
 	public function onSuccess() {
 		$out = $this->getOutput();
-		$out->addModules( 'ext.quicksurveys.init' );
 
 		$target = $this->getRequest()->getVal( 'wpTarget' );
-		$neighbors = $this->similarEditorsClient->getSimilarEditors( $target );
+		$result = $this->similarEditorsClient->getSimilarEditors( $target );
 
-		if ( $neighbors !== null ) {
-			$resultsFormatter = $this->resultsFormatterFactory->createFormatter(
-				$this->getLanguage()
-			);
-			$out->addHtml( $resultsFormatter->formatResults( $target, $neighbors ) );
+		if ( is_array( $result ) ) {
+			$this->form->displayForm( true );
+			$out->addModules( 'ext.quicksurveys.init' );
+			if ( count( $result ) > 0 ) {
+				$resultsFormatter = $this->resultsFormatterFactory->createFormatter(
+					$this->getLanguage()
+				);
+				$out->addHtml( $resultsFormatter->formatResults( $target, $result ) );
+			} else {
+				$out->addHtml( $this->msg( 'similareditors-no-results' ) );
+			}
 		} else {
-			$out->addHtml( $this->msg( 'similareditors-no-results' ) );
+			$out->addHtml(
+				new MessageWidget( [
+					'type' => 'error',
+					'label' => $this->msg( $result )
+				] )
+			);
+			$this->form->displayForm( false );
 		}
 	}
 }

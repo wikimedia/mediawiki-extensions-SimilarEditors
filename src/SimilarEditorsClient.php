@@ -3,6 +3,8 @@
 namespace MediaWiki\Extension\SimilarEditors;
 
 use MediaWiki\Http\HttpRequestFactory;
+use Psr\Log\LoggerInterface;
+use Status;
 
 class SimilarEditorsClient implements Client {
 
@@ -10,6 +12,11 @@ class SimilarEditorsClient implements Client {
 	 * @var HttpRequestFactory
 	 */
 	private $httpRequestFactory;
+
+	/**
+	 * @var LoggerInterface
+	 */
+	private $logger;
 
 	/**
 	 * @var string
@@ -28,17 +35,20 @@ class SimilarEditorsClient implements Client {
 
 	/**
 	 * @param HttpRequestFactory $httpRequestFactory
+	 * @param LoggerInterface $logger
 	 * @param string $apiUrl
 	 * @param string $apiUser
 	 * @param string $apiPassword
 	 */
 	public function __construct(
 		HttpRequestFactory $httpRequestFactory,
+		LoggerInterface $logger,
 		string $apiUrl,
 		string $apiUser,
 		string $apiPassword
 	) {
 		$this->httpRequestFactory = $httpRequestFactory;
+		$this->logger = $logger;
 		$this->apiUrl = $apiUrl;
 		$this->apiUser = $apiUser;
 		$this->apiPassword = $apiPassword;
@@ -55,12 +65,20 @@ class SimilarEditorsClient implements Client {
 	 * @inheritDoc
 	 */
 	public function getSimilarEditors( string $editor ) {
-		$response = $this->httpRequestFactory->get( $this->apiUrl . '?usertext=' . urlencode( $editor ), [
-			'username' => $this->apiUser,
-			'password' => $this->apiPassword
-		], __METHOD__ );
-		if ( $response ) {
-			$json = json_decode( $response, true );
+		$request = $this->httpRequestFactory->create(
+			$this->apiUrl . '?usertext=' . urlencode( $editor ),
+			[
+				'method' => 'GET',
+				'username' => $this->apiUser,
+				'password' => $this->apiPassword
+			],
+			__METHOD__
+		);
+
+		$status = $request->execute();
+		$json = json_decode( $request->getContent(), true );
+
+		if ( $status->isOK() ) {
 			if ( $json && !empty( $json['results'] ) ) {
 				return array_map( static function ( $result ) {
 					return new Neighbor(
@@ -79,8 +97,31 @@ class SimilarEditorsClient implements Client {
 						$result['follow-up'] ?? [] );
 				}, $json['results'] );
 			}
-			return null;
 		}
-		return null;
+
+		// Bad status, or good status but response body contains either an error or bad data
+		$this->logErrors( $status, $request->getContent() );
+		if ( $json ) {
+			return isset( $json['error-key'] ) ?
+				'similareditors-error-' . $json['error-key'] :
+				'similareditors-error-default';
+		}
+		return 'similareditors-error-default';
+	}
+
+	/**
+	 * @param Status $status
+	 * @param string $content
+	 * @return void
+	 */
+	private function logErrors( $status, $content ) {
+		$this->logger->warning(
+			Status::wrap( $status )->getWikiText( false, false, 'en' ),
+			[
+				'error' => $status->getErrorsByType( 'error' ),
+				'caller' => __METHOD__,
+				'content' => $content
+			]
+		);
 	}
 }
