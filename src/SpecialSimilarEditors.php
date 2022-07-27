@@ -116,10 +116,19 @@ class SpecialSimilarEditors extends SpecialPage {
 				$out->addHtml( $this->msg( 'similareditors-no-results' ) );
 			}
 		} else {
+			switch ( $result ) {
+				// We encountered an error, but with no type or an unrecognized type.
+				// Display the default message instead of a customized message.
+				case 'database-refresh':
+					$message = $this->msg( 'similareditors-error-database-refresh' );
+					break;
+				default:
+					$message = 'similareditors-error-default';
+			}
 			$out->addHtml(
 				new MessageWidget( [
 					'type' => 'error',
-					'label' => $this->msg( $result )
+					'label' => $this->msg( $message )
 				] )
 			);
 			$this->form->displayForm( false );

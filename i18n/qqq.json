@@ -9,6 +9,7 @@
 	"right-similareditors": "{{doc-right|similareditors}}",
 	"similareditors": "Title for Special:SimilarEditors",
 	"similareditors-desc": "{{desc|name=SimilarEditors|url=https://www.mediawiki.org/wiki/Extension:SimilarEditors}}",
+	"similareditors-error-database-refresh": "Error message displayed when there is a database refresh in progress, temporarily blocking access",
 	"similareditors-error-default": "Error message displayed when no error key is specified",
 	"similareditors-extensionname": "{{name}}\nThe name of the extension",
 	"similareditors-form-field-target-label": "Label for a form field on [[Special:SimilarEditors]]",
