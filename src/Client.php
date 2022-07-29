@@ -13,10 +13,10 @@ interface Client {
 	public function getEditor( string $target );
 
 	/**
-	 * Retrieve similar editors
+	 * Retrieve similar editors, or an error message key
 	 *
 	 * @param string $target
-	 * @return Neighbor[]|null
+	 * @return Neighbor[]|string
 	 */
 	public function getSimilarEditors( string $target );
 }

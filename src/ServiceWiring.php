@@ -3,6 +3,7 @@
 use MediaWiki\Extension\SimilarEditors\MockSimilarEditorsClient;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatterFactory;
 use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 
 // PHPUnit doesn't understand code coverage for code outside of classes/functions,
@@ -23,6 +24,7 @@ return [
 		) {
 			return new SimilarEditorsClient(
 				$services->getHttpRequestFactory(),
+				LoggerFactory::getInstance( 'http' ),
 				$apiUrl,
 				$apiUser,
 				$apiPassword

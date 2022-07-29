@@ -7,6 +7,9 @@ use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
 use MediaWiki\Extension\SimilarEditors\TimeOverlap;
 use MediaWiki\Http\HttpRequestFactory;
 use MediaWikiUnitTestCase;
+use MWHttpRequest;
+use Psr\Log\LoggerInterface;
+use Status;
 
 /**
  * @group SimilarEditors
@@ -15,12 +18,25 @@ use MediaWikiUnitTestCase;
 class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 
 	private function getClient( $data = null ) {
-		$httpRequestFactory = $this->createMock( HttpRequestFactory::class );
-		$httpRequestFactory->method( 'get' )
+		$status = $this->createMock( Status::class );
+		$status->method( 'isOK' )
+			->willReturn( true );
+
+		$request = $this->createMock( MWHttpRequest::class );
+		$request->method( 'getContent' )
 			->willReturn( $data );
+		$request->method( 'execute' )
+			->willReturn( $status );
+
+		$httpRequestFactory = $this->createMock( HttpRequestFactory::class );
+		$httpRequestFactory->method( 'create' )
+			->willReturn( $request );
+
+		$logger = $this->createMock( LoggerInterface::class );
 
 		return new SimilarEditorsClient(
 			$httpRequestFactory,
+			$logger,
 			'foo',
 			'bar',
 			'baz'
@@ -105,7 +121,10 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		);
 	}
 
-	public function testGetSimilarEditorsWillReturnNull() {
-		$this->assertNull( $this->getClient()->getSimilarEditors( 'Editor' ) );
+	public function testGetSimilarEditorsWillReturnErrorKey() {
+		$this->assertSame(
+			'similareditors-error-default',
+			$this->getClient()->getSimilarEditors( 'Editor' )
+		);
 	}
 }
