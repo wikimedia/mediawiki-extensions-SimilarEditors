@@ -93,7 +93,7 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 				}
 			],
 			"user_text": "EditorWithSimilarEdits"
-			}';
+		}';
 
 		$expected = [
 			new Neighbor(
@@ -118,6 +118,25 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		$this->assertArrayEquals(
 			$expected,
 			$this->getClient( $response )->getSimilarEditors( 'EditorWithSimilarEdits' )
+		);
+	}
+
+	/**
+	 * @covers \MediaWiki\Extension\SimilarEditors\SimilarEditorsClient::getSimilarEditors
+	 */
+	public function testGetSimilarEditorsWillReturnNoResults() {
+		$response = '{
+			"first_edit_in_data": "2020-03-20 11:23:58 UTC",
+			"last_edit_in_data": "2021-08-03 09:30:23 UTC",
+			"num_edits_in_data": 7,
+			"results": [],
+			"user_text": "EditorWithNoResults"
+		}';
+
+		$expected = [];
+		$this->assertArrayEquals(
+			$expected,
+			$this->getClient( $response )->getSimilarEditors( 'EditorWithNoResults' )
 		);
 	}
 

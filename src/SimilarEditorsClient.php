@@ -79,7 +79,7 @@ class SimilarEditorsClient implements Client {
 		$json = json_decode( $request->getContent(), true );
 
 		if ( $status->isOK() ) {
-			if ( $json && !empty( $json['results'] ) ) {
+			if ( $json && isset( $json['results'] ) ) {
 				return array_map( static function ( $result ) {
 					return new Neighbor(
 						$result['user_text'],
