@@ -8,6 +8,7 @@
 	"right-similareditors": "Accéder à [[Special:SimilarEditors]]",
 	"similareditors": "Rédacteurs similaires",
 	"similareditors-desc": "Fournit des détails sur les utilisateurs ayant des historiques similaires de modifications.",
+	"similareditors-error-default": "Quelque chose s’est mal passé, nous examinons la situation.",
 	"similareditors-extensionname": "Rédacteurs similaires",
 	"similareditors-form-field-target-label": "Nom d’utilisateur ou adresse IP :",
 	"similareditors-form-field-target-placeholder": "Nom d’utilisateur ou 1.1.1.1",

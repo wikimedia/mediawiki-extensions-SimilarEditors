@@ -8,6 +8,7 @@
 	"right-similareditors": "Zugriff auf [[Special:SimilarEditors]]",
 	"similareditors": "Ähnliche Benutzer",
 	"similareditors-desc": "Liefert Details über Benutzer mit ähnlichen Bearbeitungshistorien.",
+	"similareditors-error-default": "Etwas ist schiefgelaufen, wir untersuchen es.",
 	"similareditors-extensionname": "Ähnliche Benutzer",
 	"similareditors-form-field-target-label": "Benutzername oder IP-Adresse:",
 	"similareditors-form-field-target-placeholder": "Benutzername oder 1.1.1.1",

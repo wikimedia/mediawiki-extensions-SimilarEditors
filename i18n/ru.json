@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kaganer"
+			"Kaganer",
+			"Pacha Tchernof"
 		]
 	},
 	"action-similareditors": "доступ к [[Special:SimilarEditors]]",
-	"right-similareditors": "Доступ к [[Special:SimilarEditors]]"
+	"right-similareditors": "Доступ к [[Special:SimilarEditors]]",
+	"similareditors-error-default": "Что-то пошло не так, мы разбираемся в случившемся."
 }
