@@ -47,16 +47,10 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		$this->assertNotNull( $this->getClient() );
 	}
 
-	/**
-	 * @covers \MediaWiki\Extension\SimilarEditors\SimilarEditorsClient::getEditor
-	 */
 	public function testGetEditor() {
 		$this->assertNull( $this->getClient()->getEditor( 'Editor' ) );
 	}
 
-	/**
-	 * @covers \MediaWiki\Extension\SimilarEditors\SimilarEditorsClient::getSimilarEditors
-	 */
 	public function testGetSimilarEditors() {
 		$response = '{
 			"first_edit_in_data": "2020-03-20 11:23:58 UTC",
@@ -121,9 +115,6 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		);
 	}
 
-	/**
-	 * @covers \MediaWiki\Extension\SimilarEditors\SimilarEditorsClient::getSimilarEditors
-	 */
 	public function testGetSimilarEditorsWillReturnNoResults() {
 		$response = '{
 			"first_edit_in_data": "2020-03-20 11:23:58 UTC",

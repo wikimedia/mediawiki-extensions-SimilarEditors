@@ -12,7 +12,7 @@ use SpecialPageExecutor;
 use SpecialPageTestBase;
 
 /**
- * @coversDefaultClass MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors
+ * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors
  */
 class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 	/**
@@ -25,32 +25,20 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 		return new SpecialSimilarEditors( $client, $resultsFormatterFactory );
 	}
 
-	/**
-	 * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors::__construct
-	 */
 	public function testConstruct() {
 		$this->assertInstanceOf( SpecialSimilarEditors::class, $this->newSpecialPage(), 'No errors' );
 	}
 
-	/**
-	 * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors::onSubmit
-	 */
 	public function testOnSubmit() {
 		$this->assertTrue( $this->newSpecialPage()->onSubmit( [] ) );
 	}
 
-	/**
-	 * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors::execute
-	 */
 	public function testExecuteWithNoTarget() {
 		$user = $this->getTestSysop();
 		list( $html ) = $this->executeSpecialPage( '', null, 'qqx', $user->getUser() );
 		$this->assertRegExp( '/name=\'wpTarget\' value=\'/', $html );
 	}
 
-	/**
-	 * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors::execute
-	 */
 	public function testExecuteWithTargetNoResults() {
 		$client = $this->createMock( SimilarEditorsClient::class );
 		$client->method( 'getSimilarEditors' )
@@ -72,9 +60,6 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 		$this->assertStringContainsString( 'similareditors-no-results', $html );
 	}
 
-	/**
-	 * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors::execute
-	 */
 	public function testExecuteWithResults() {
 		$client = new MockSimilarEditorsClient();
 		$userFactory = $this->getServiceContainer()->getUserFactory();

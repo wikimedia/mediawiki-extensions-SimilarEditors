@@ -66,7 +66,6 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * @dataProvider provideFormatRowProperty
-	 * @covers \MediaWiki\Extension\SimilarEditors\ResultsFormatter::formatRowProperty
 	 */
 	public function testFormatRowProperty( $expected, $input ) {
 		$userFactory = $this->createMock( UserFactory::class );

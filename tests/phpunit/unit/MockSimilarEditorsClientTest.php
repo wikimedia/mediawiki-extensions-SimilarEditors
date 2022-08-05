@@ -24,16 +24,10 @@ class MockSimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		$this->assertNotNull( $this->getClient() );
 	}
 
-	/**
-	 * @covers \MediaWiki\Extension\SimilarEditors\MockSimilarEditorsClient::getEditor
-	 */
 	public function testGetEditor() {
 		$this->assertNull( $this->getClient()->getEditor( 'Editor' ) );
 	}
 
-	/**
-	 * @covers \MediaWiki\Extension\SimilarEditors\MockSimilarEditorsClient::getSimilarEditors
-	 */
 	public function testGetSimilarEditors() {
 		$client = $this->getClient();
 		$neighbors = [
