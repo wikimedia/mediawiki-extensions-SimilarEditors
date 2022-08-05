@@ -35,6 +35,11 @@
 			"localBasePath": "modules/ext.similarEditors.styles",
 			"remoteExtPath": "SimilarEditors/modules/ext.similarEditors.styles",
 			"styles": "similarEditors.less"
+		},
+		"ext.similarEditors": {
+			"localBasePath": "modules/ext.similarEditors",
+			"remoteExtPath": "SimilarEditors/modules/ext.similarEditors",
+			"scripts": "init.js"
 		}
 	},
 	"ExtensionMessagesFiles": {

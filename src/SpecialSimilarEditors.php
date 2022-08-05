@@ -58,11 +58,6 @@ class SpecialSimilarEditors extends SpecialPage {
 				'ipallowed' => true,
 				'required' => true,
 			],
-			'Survey' => [
-				'type' => 'hidden',
-				'name' => 'quicksurvey',
-				'default' => 'similareditors',
-			],
 		];
 
 		$this->form = HTMLForm::factory( 'ooui', $fields, $this->getContext() );
@@ -106,7 +101,7 @@ class SpecialSimilarEditors extends SpecialPage {
 
 		if ( is_array( $result ) ) {
 			$this->form->displayForm( true );
-			$out->addModules( 'ext.quicksurveys.init' );
+			$out->addModules( 'ext.similarEditors' );
 			if ( count( $result ) > 0 ) {
 				$resultsFormatter = $this->resultsFormatterFactory->createFormatter(
 					$this->getLanguage()
