@@ -101,12 +101,10 @@ class SimilarEditorsClient implements Client {
 
 		// Bad status, or good status but response body contains either an error or bad data
 		$this->logErrors( $status, $request->getContent() );
-		if ( $json ) {
-			return isset( $json['error-key'] ) ?
-				'similareditors-error-' . $json['error-key'] :
-				'similareditors-error-default';
+		if ( $json && isset( $json['error-type'] ) ) {
+			return $json['error-type'];
 		}
-		return 'similareditors-error-default';
+		return '';
 	}
 
 	/**

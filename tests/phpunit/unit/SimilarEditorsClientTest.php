@@ -140,9 +140,9 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		);
 	}
 
-	public function testGetSimilarEditorsWillReturnErrorKey() {
+	public function testGetSimilarEditorsWillReturnError() {
 		$this->assertSame(
-			'similareditors-error-default',
+			'',
 			$this->getClient()->getSimilarEditors( 'Editor' )
 		);
 	}
