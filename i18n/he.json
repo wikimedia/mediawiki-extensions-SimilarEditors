@@ -8,6 +8,7 @@
 	"right-similareditors": "גישה לדף המיוחד [[Special:SimilarEditors]]",
 	"similareditors": "עורכים דומים",
 	"similareditors-desc": "אספקת פרטים של משתמשים עם היסטוריית עריכות דומות.",
+	"similareditors-error-database-refresh": "משהו השתבש, נא לנסות שוב בעוד כמה דקות.",
 	"similareditors-error-default": "משהו השתבש, אנחנו בודקים את זה.",
 	"similareditors-form-field-target-label": "שם משתמש או כתובת IP:",
 	"similareditors-form-field-target-placeholder": "שם משתמש או 1.1.1.1",
