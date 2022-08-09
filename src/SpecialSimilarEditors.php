@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\SimilarEditors;
 
 use Html;
 use HTMLForm;
+use OOUI\HtmlSnippet;
 use OOUI\MessageWidget;
 use SpecialPage;
 use Status;
@@ -137,7 +138,8 @@ class SpecialSimilarEditors extends SpecialPage {
 			$out->addHtml(
 				new MessageWidget( [
 					'type' => 'error',
-					'label' => $this->msg( $message )
+					'label' => new HtmlSnippet(
+						$this->msg( $message )->parse() ),
 				] )
 			);
 			$this->form->displayForm( false );
