@@ -8,6 +8,7 @@
 	"right-similareditors": "Пристап до [[Special:SimilarEditors]]",
 	"similareditors": "Слични уредници",
 	"similareditors-desc": "Дава поединости за корисници со слични уредувачки истории.",
+	"similareditors-error-database-refresh": "Нешто не е во ред. Обидете се повторно за неколку минути.",
 	"similareditors-error-default": "Нешто не е во ред. Го разгледуваме проблемот.",
 	"similareditors-form-field-target-label": "Корисничко име или IP-адреса:",
 	"similareditors-form-field-target-placeholder": "Корисничко име или 1.1.1.1",
