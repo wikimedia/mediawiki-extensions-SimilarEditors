@@ -122,6 +122,15 @@ class SpecialSimilarEditors extends SpecialPage {
 				case 'database-refresh':
 					$message = $this->msg( 'similareditors-error-database-refresh' );
 					break;
+				case 'user-no-account':
+					$message = $this->msg( 'similareditors-error-user-no-account', $target );
+					break;
+				case 'user-bot':
+					$message = $this->msg( 'similareditors-error-user-bot', $target );
+					break;
+				case 'user-no-edits':
+					$message = $this->msg( 'similareditors-error-user-no-edits', $target );
+					break;
 				default:
 					$message = 'similareditors-error-default';
 			}
