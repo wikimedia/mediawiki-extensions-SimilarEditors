@@ -2,15 +2,5 @@
 	"root": true,
 	"extends": [
 		"wikimedia/server"
-	],
-	"overrides": [
-		{
-			"files": [
-				"i18n/**"
-			],
-			"rules": {
-				"sort-keys": "error"
-			}
-		}
 	]
 }
