@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hanna Tardos"
+		]
+	},
+	"similareditors-error-database-refresh": "Hiba történt. Pár perc múlva próbáld újra!",
+	"similareditors-error-user-no-account": "Úgy tűnik, $1 felhasználónak nincs fiókja az angol nyelvű Wikipédián."
+}
