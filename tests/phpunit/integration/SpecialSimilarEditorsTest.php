@@ -36,7 +36,7 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 	public function testExecuteWithNoTarget() {
 		$user = $this->getTestSysop();
 		list( $html ) = $this->executeSpecialPage( '', null, 'qqx', $user->getUser() );
-		$this->assertRegExp( '/name=\'wpTarget\' value=\'/', $html );
+		$this->assertMatchesRegularExpression( '/name=\'wpTarget\' value=\'/', $html );
 	}
 
 	public function testExecuteWithTargetNoResults() {
@@ -79,7 +79,7 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 		);
 
 		// assert results table is created
-		$this->assertRegExp( '/table class="mw-datatable/', $html );
+		$this->assertMatchesRegularExpression( '/table class="mw-datatable/', $html );
 		// asserts output contains results
 		$this->assertStringContainsString( 'SomeUser1', $html );
 	}
