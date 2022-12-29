@@ -76,7 +76,8 @@ class SimilarEditorsClient implements Client {
 		);
 
 		$status = $request->execute();
-		$json = json_decode( $request->getContent(), true );
+		$requestContent = $request->getContent();
+		$json = $requestContent !== null ? json_decode( $requestContent, true ) : null;
 
 		if ( $status->isOK() ) {
 			if ( $json && isset( $json['results'] ) ) {
@@ -100,7 +101,7 @@ class SimilarEditorsClient implements Client {
 		}
 
 		// Bad status, or good status but response body contains either an error or bad data
-		$this->logErrors( $status, $request->getContent() );
+		$this->logErrors( $status, $requestContent );
 		if ( $json && isset( $json['error-type'] ) ) {
 			return $json['error-type'];
 		}
@@ -109,7 +110,7 @@ class SimilarEditorsClient implements Client {
 
 	/**
 	 * @param Status $status
-	 * @param string $content
+	 * @param string|null $content
 	 * @return void
 	 */
 	private function logErrors( $status, $content ) {

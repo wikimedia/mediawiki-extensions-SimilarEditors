@@ -29,6 +29,8 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 			->willReturn( $user );
 
 		$language = $this->createMock( Language::class );
+		$language->method( 'getCode' )
+			->willReturn( 'en' );
 
 		$resultsFormatter = new ResultsFormatter(
 			$userFactory,
@@ -70,6 +72,8 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 	public function testFormatRowProperty( $expected, $input ) {
 		$userFactory = $this->createMock( UserFactory::class );
 		$language = $this->createMock( Language::class );
+		$language->method( 'getCode' )
+			->willReturn( 'en' );
 		$user = $this->createMock( User::class );
 
 		$userFactory->method( 'newFromName' )
