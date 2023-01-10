@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"similareditors": "Golygyddion Tebyg",
+	"similareditors-form-field-target-label": "Enw defnyddiwr neu gyfeiriad IP:",
+	"similareditors-form-field-target-placeholder": "EnwDefnyddiwr neu 1.1.1.1",
+	"similareditors-form-legend": "Chwilio golygyddion tebyg",
+	"similareditors-form-submit": "Chwilio",
+	"similareditors-no-results": "Dim canlyniadau.",
+	"similareditors-overlap-level-high": "Uchel",
+	"similareditors-overlap-level-low": "Isel",
+	"similareditors-overlap-level-medium": "Canol",
+	"similareditors-overlap-level-no-overlap": "Dim gorgyffwrdd",
+	"similareditors-results-user": "Defnyddiwr",
+	"similareditors-results-user-timeline": "llinell amser"
+}
