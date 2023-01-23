@@ -4,6 +4,8 @@
 			"Afalau"
 		]
 	},
+	"action-similareditors": "gweld [[Special:SimilarEditors]]",
+	"right-similareditors": "Gweld [[Special:SimilarEditors]]",
 	"similareditors": "Golygyddion Tebyg",
 	"similareditors-form-field-target-label": "Enw defnyddiwr neu gyfeiriad IP:",
 	"similareditors-form-field-target-placeholder": "EnwDefnyddiwr neu 1.1.1.1",
