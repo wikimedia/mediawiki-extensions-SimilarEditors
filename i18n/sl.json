@@ -4,5 +4,31 @@
 			"Eleassar"
 		]
 	},
-	"similareditors-results-user": "Uporabnik"
+	"action-similareditors": "dostop do [[Special:SimilarEditors]]",
+	"right-similareditors": "Dostop do [[Special:SimilarEditors]]",
+	"similareditors": "Podobni urejevalci",
+	"similareditors-desc": "Zagotavlja podrobnosti o uporabnikih s podobno zgodovino urejanja.",
+	"similareditors-error-database-refresh": "Nekaj je šlo narobe, poskusite znova čez nekaj minut.",
+	"similareditors-error-default": "Nekaj je šlo narobe, preiskujemo.",
+	"similareditors-error-user-bot": "Uporabnik $1 je bot in zato zunaj dosega.",
+	"similareditors-error-user-no-account": "Zdi se, da uporabnik $1 v angleški vikipediji nima računa.",
+	"similareditors-error-user-no-edits": "Zdi se, da uporabnik $1 v angleški vikipediji nima računa (ali urejanj v dosegu).",
+	"similareditors-form-field-target-label": "Uporabniško ime ali IP-naslov:",
+	"similareditors-form-field-target-placeholder": "Uporabniško ime ali 1.1.1.1",
+	"similareditors-form-legend": "Iskanje podobnih urejevalcev",
+	"similareditors-form-submit": "Poišči",
+	"similareditors-no-results": "Ni zadetkov.",
+	"similareditors-overlap-level-high": "Visoko",
+	"similareditors-overlap-level-low": "Nizko",
+	"similareditors-overlap-level-medium": "Srednje",
+	"similareditors-overlap-level-no-overlap": "Ni prekrivanja",
+	"similareditors-results-day-overlap": "Prekrivanje dneva",
+	"similareditors-results-edit-overlap": "Prekrivanje urejanja",
+	"similareditors-results-edits": "Urejanja v podatkih",
+	"similareditors-results-hour-overlap": "Prekrivanje ur",
+	"similareditors-results-inverse-edit-overlap": "Nasprotno prekrivanje urejanja",
+	"similareditors-results-user": "Uporabnik",
+	"similareditors-results-user-timeline": "časovnica",
+	"similareditors-summary": "Poiščite urejevalce, ki so po zgodovini urejanja najbolj podobni predloženemu urejevalcu.",
+	"similareditors-survey-question": "So se vam rezultati zdeli koristni? Katere druge informacije iščete, ko poskušate najti marionete?"
 }
