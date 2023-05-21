@@ -95,7 +95,7 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 		$this->assertSame( $expected, $wrapper->formatRowProperty( 'targetUser', $neighbor, $input ) );
 	}
 
-	public function provideFormatRowProperty() {
+	public static function provideFormatRowProperty() {
 		return [
 			'edits' => [ '100' , 'edits' ],
 			'edit-overlap' => [ '0.2' , 'edit-overlap' ],
