@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": []
 	},
-	"action-similareditors": "access [[Special:SimilarEditors]]",
-	"right-similareditors": "Access [[Special:SimilarEditors]]",
+	"action-similareditors": "access [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Access [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Similar Editors",
 	"similareditors-desc": "Provides details of users with similar edit histories.",
 	"similareditors-error-database-refresh": "Something has gone wrong, please try again in a few minutes.",
@@ -13,7 +13,7 @@
 	"similareditors-error-user-no-edits": "User $1 does not appear to have an account (or edits in scope) in English Wikipedia.",
 	"similareditors-extensionname": "Similar Editors",
 	"similareditors-form-field-target-label": "Username or IP address:",
-	"similareditors-form-field-target-placeholder": "UserName or 1.1.1.1",
+	"similareditors-form-field-target-placeholder": "Username or 1.1.1.1",
 	"similareditors-form-legend": "Find similar editors",
 	"similareditors-form-submit": "Find",
 	"similareditors-no-results": "There are no results.",
