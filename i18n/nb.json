@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"action-similareditors": "få tilgang [[Special:SimilarEditors]]",
+	"right-similareditors": "Få tilgang til [[Special:SimilarEditors]]",
+	"similareditors": "Lignende bidragsytere",
+	"similareditors-desc": "Gir detaljer om brukere med lignende redigeringshistorikk.",
+	"similareditors-error-database-refresh": "Noe har gått galt. Prøv igjen om noen minutter.",
+	"similareditors-error-default": "Noe har gått galt, vi ser nærmere på det.",
+	"similareditors-error-user-bot": "Brukeren $1 er en bot, og kan derfor ikke sjekkes.",
+	"similareditors-error-user-no-account": "Brukeren $1 ser ikke ut til å ha en konto på Wikipedia på engelsk.",
+	"similareditors-error-user-no-edits": "Brukeren $1 ser ikke ut til å ha en konto (eller noen passende redigeringer) på Wikipedia på engelsk.",
+	"similareditors-form-field-target-label": "Brukernavn eller IP-adresse:",
+	"similareditors-form-field-target-placeholder": "Brukernavn eller 1.1.1.1",
+	"similareditors-form-legend": "Finn lignende bidragsytere",
+	"similareditors-form-submit": "Finn",
+	"similareditors-no-results": "Det er ingen resultater.",
+	"similareditors-overlap-level-high": "Høy",
+	"similareditors-overlap-level-low": "Lav",
+	"similareditors-overlap-level-medium": "Medium",
+	"similareditors-overlap-level-no-overlap": "Ingen overlapping",
+	"similareditors-results-day-overlap": "Dagsoverlapping",
+	"similareditors-results-edit-overlap": "Redigeringsoverlapping",
+	"similareditors-results-edits": "Redigeringer i data",
+	"similareditors-results-hour-overlap": "Timeoverlapping",
+	"similareditors-results-inverse-edit-overlap": "Invers redigeringsoverlapping",
+	"similareditors-results-user": "Bruker",
+	"similareditors-results-user-timeline": "tidslinje",
+	"similareditors-summary": "Finn de bidragsyterne som ligner mest på en annen basert på redigeringshistorikk.",
+	"similareditors-survey-question": "Syntes du resultatene var nyttige? Hva slags annen informasjon leter du etter når du prøver å finne sokkedukker?"
+}
