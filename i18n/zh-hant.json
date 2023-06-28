@@ -1,17 +1,35 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kly",
 			"Winston Sung"
 		]
 	},
 	"action-similareditors": "存取 [[Special:SimilarEditors]]",
 	"right-similareditors": "存取 [[Special:SimilarEditors]]",
+	"similareditors": "相似編輯者",
+	"similareditors-desc": "提供具有相似編輯歷史記錄的使用者詳細資訊。",
+	"similareditors-error-database-refresh": "出現了一些錯誤，請幾分鐘後再試。",
+	"similareditors-error-default": "出現了一些錯誤，我們正在釐清。",
+	"similareditors-error-user-bot": "使用者$1是一個機器人，因此超出了範圍。",
+	"similareditors-error-user-no-account": "使用者$1似乎沒有英語維基百科的帳號。",
+	"similareditors-error-user-no-edits": "使用者$1似乎沒有英語維基百科的帳號（或範圍內的編輯）。",
+	"similareditors-form-field-target-label": "使用者名稱或 IP 位址：",
+	"similareditors-form-field-target-placeholder": "使用者名稱或 1.1.1.1",
+	"similareditors-form-legend": "尋找類似的編輯者",
 	"similareditors-form-submit": "尋找",
 	"similareditors-no-results": "查無結果。",
 	"similareditors-overlap-level-high": "高",
 	"similareditors-overlap-level-low": "低",
 	"similareditors-overlap-level-medium": "中",
 	"similareditors-overlap-level-no-overlap": "無重疊",
+	"similareditors-results-day-overlap": "日間重疊",
+	"similareditors-results-edit-overlap": "編輯重疊",
+	"similareditors-results-edits": "編輯量",
+	"similareditors-results-hour-overlap": "小時重疊",
+	"similareditors-results-inverse-edit-overlap": "反向編輯重疊",
 	"similareditors-results-user": "使用者",
-	"similareditors-results-user-timeline": "時間軸"
+	"similareditors-results-user-timeline": "時間軸",
+	"similareditors-summary": "根據編輯歷史，尋找與指定編輯者最相似的編輯者。",
+	"similareditors-survey-question": "您覺得結果有幫助嗎？當您嘗試尋找分身帳號時，您還會尋找哪些資訊？"
 }
