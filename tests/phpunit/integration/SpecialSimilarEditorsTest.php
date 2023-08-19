@@ -13,6 +13,7 @@ use SpecialPageTestBase;
 
 /**
  * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors
+ * @group Database
  */
 class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 	/**
