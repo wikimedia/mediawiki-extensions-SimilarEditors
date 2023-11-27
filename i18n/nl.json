@@ -8,8 +8,14 @@
 	"right-similareditors": "Toegang [[Special:SimilarEditors]]",
 	"similareditors": "Vergelijkbare bewerkers",
 	"similareditors-desc": "Toont details van gebruikers met vergelijkbare bewerkgeschiedenissen.",
+	"similareditors-error-database-refresh": "Er is iets misgegaan. Probeer het over een paar minuten opnieuw.",
+	"similareditors-error-default": "Er is iets misgegaan - we zijn een onderzoek gestart.",
+	"similareditors-error-user-bot": "Gebruiker $1 is een bot en valt daarom buiten het bereik.",
+	"similareditors-error-user-no-account": "Gebruiker $1 lijkt geen account te hebben op de Engelstalige Wikipedia.",
+	"similareditors-error-user-no-edits": "Het lijkt erop dat gebruiker $1 geen account (of wijzigingen binnen bereik) heeft op de Engelstalige Wikipedia.",
 	"similareditors-form-field-target-label": "Gebruikersnaam of ip-adres:",
 	"similareditors-form-field-target-placeholder": "Gebruikersnaam of 1.1.1.1",
+	"similareditors-form-legend": "Vergelijkbare bewerkers zoeken",
 	"similareditors-form-submit": "Zoeken",
 	"similareditors-no-results": "Er zijn geen zoekresultaten.",
 	"similareditors-overlap-level-high": "Hoog",
@@ -20,6 +26,9 @@
 	"similareditors-results-edit-overlap": "Overlap bewerken",
 	"similareditors-results-edits": "Bewerkingen in gegevens",
 	"similareditors-results-hour-overlap": "Uuroverlap",
+	"similareditors-results-inverse-edit-overlap": "Omgekeerde bewerkingsoverlapping",
 	"similareditors-results-user": "Gebruiker",
-	"similareditors-summary": "Vind de vergelijkbaarste bewerkers op basis van de bewerkgeschiedenis."
+	"similareditors-results-user-timeline": "tijdlijn",
+	"similareditors-summary": "Vind de vergelijkbaarste bewerkers op basis van de bewerkgeschiedenis.",
+	"similareditors-survey-question": "Vond u de resultaten nuttig? Naar welke andere informatie bent u op zoek tijdens uw zoektocht naar sokpoppen?"
 }
