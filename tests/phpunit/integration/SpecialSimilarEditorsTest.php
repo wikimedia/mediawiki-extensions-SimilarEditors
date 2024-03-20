@@ -36,7 +36,7 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 
 	public function testExecuteWithNoTarget() {
 		$user = $this->getTestSysop();
-		list( $html ) = $this->executeSpecialPage( '', null, 'qqx', $user->getUser() );
+		[ $html ] = $this->executeSpecialPage( '', null, 'qqx', $user->getUser() );
 		$this->assertMatchesRegularExpression( '/name=\'wpTarget\' value=\'/', $html );
 	}
 
@@ -51,7 +51,7 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 		$request = new FauxRequest( [
 			'wpTarget' => 'someuser0',
 		], true );
-		list( $html ) = ( new SpecialPageExecutor() )->executeSpecialPage(
+		[ $html ] = ( new SpecialPageExecutor() )->executeSpecialPage(
 			$specialPage,
 			'',
 			$request,
@@ -71,7 +71,7 @@ class SpecialSimilarEditorsTest extends SpecialPageTestBase {
 		$request = new FauxRequest( [
 			'wpTarget' => 'someuser0',
 		], true );
-		list( $html ) = ( new SpecialPageExecutor() )->executeSpecialPage(
+		[ $html ] = ( new SpecialPageExecutor() )->executeSpecialPage(
 			$specialPage,
 			'',
 			$request,

@@ -97,11 +97,11 @@ class ResultsFormatterTest extends MediaWikiIntegrationTestCase {
 
 	public static function provideFormatRowProperty() {
 		return [
-			'edits' => [ '100' , 'edits' ],
-			'edit-overlap' => [ '0.2' , 'edit-overlap' ],
-			'hour-overlap' => [ 'High' , 'hour-overlap' ],
-			'day-overlap' => [ 'Medium' , 'day-overlap' ],
-			'inverse-edit-overlap' => [ '0.4' , 'inverse-edit-overlap' ],
+			'edits' => [ '100', 'edits' ],
+			'edit-overlap' => [ '0.2', 'edit-overlap' ],
+			'hour-overlap' => [ 'High', 'hour-overlap' ],
+			'day-overlap' => [ 'Medium', 'day-overlap' ],
+			'inverse-edit-overlap' => [ '0.4', 'inverse-edit-overlap' ],
 			'user' => [
 				'<span class="mw-userlink mw-extuserlink mw-anonuserlink"><bdi>en&gt;SomeUser</bdi></span> ' .
 				'(<a class="external" rel="nofollow" href="https://interaction-timeline.toolforge.org/' .
