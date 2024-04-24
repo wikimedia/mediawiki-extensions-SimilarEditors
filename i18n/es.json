@@ -24,6 +24,5 @@
 	"similareditors-results-hour-overlap": "Coincidencia de hora",
 	"similareditors-results-inverse-edit-overlap": "Coincidencia de edición inversa.",
 	"similareditors-results-user": "Usuario",
-	"similareditors-summary": "Encontrar los editores más similares a un editor determinado según el historial de edición.",
-	"similareditors-survey-question": "¿Encontraste útiles los resultados? ¿Qué otra información buscas cuando tratas de encontrar \"impostores\"?"
+	"similareditors-summary": "Encontrar los editores más similares a un editor determinado según el historial de edición."
 }
