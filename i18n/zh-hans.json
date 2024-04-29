@@ -1,14 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lakejason0"
+			"Lakejason0",
+			"沈澄心"
 		]
 	},
 	"action-similareditors": "访问[[Special:SimilarEditors]]",
 	"right-similareditors": "访问[[Special:SimilarEditors]]",
 	"similareditors": "相似的编辑者",
 	"similareditors-desc": "提供具有相似编辑历史的用户的详细信息。",
+	"similareditors-error-database-refresh": "出现错误，请几分钟后重试。",
 	"similareditors-error-default": "出现了一些问题，我们正在调查。",
+	"similareditors-error-user-bot": "用户$1是一个机器人，因此超出范围。",
+	"similareditors-error-user-no-account": "用户$1似乎没有英语维基百科账户。",
+	"similareditors-error-user-no-edits": "用户$1似乎没有英语维基百科的账户（或范围内的编辑）。",
 	"similareditors-form-field-target-label": "用户名或IP地址：",
 	"similareditors-form-field-target-placeholder": "UserName或1.1.1.1",
 	"similareditors-form-legend": "寻找相似的编辑者",
