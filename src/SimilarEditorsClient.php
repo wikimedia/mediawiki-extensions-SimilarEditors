@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\SimilarEditors;
 
 use MediaWiki\Http\HttpRequestFactory;
+use MediaWiki\Status\Status;
 use Psr\Log\LoggerInterface;
-use Status;
 
 class SimilarEditorsClient implements Client {
 

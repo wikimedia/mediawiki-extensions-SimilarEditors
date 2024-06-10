@@ -2,12 +2,12 @@
 
 namespace MediaWiki\Extension\SimilarEditors;
 
-use Html;
 use Language;
-use Linker;
+use MediaWiki\Html\Html;
+use MediaWiki\Linker\Linker;
+use MediaWiki\Message\Message;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserRigorOptions;
-use Message;
 
 class ResultsFormatter {
 	/**

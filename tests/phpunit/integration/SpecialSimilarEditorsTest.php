@@ -2,12 +2,12 @@
 
 namespace MediaWiki\Extension\SimilarEditors\Test\Integration;
 
-use FauxRequest;
 use MediaWiki\Extension\SimilarEditors\Client;
 use MediaWiki\Extension\SimilarEditors\MockSimilarEditorsClient;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatterFactory;
 use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
 use MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors;
+use MediaWiki\Request\FauxRequest;
 use SpecialPageExecutor;
 use SpecialPageTestBase;
 

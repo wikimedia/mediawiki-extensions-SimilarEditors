@@ -6,9 +6,9 @@ use Language;
 use MediaWiki\Extension\SimilarEditors\Neighbor;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatter;
 use MediaWiki\Extension\SimilarEditors\TimeOverlap;
+use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MediaWikiIntegrationTestCase;
-use User;
 use Wikimedia\TestingAccessWrapper;
 
 /**
