@@ -112,7 +112,6 @@ class ResultsFormatter {
 				// TODO: revert as part of T309675
 				return Linker::userLink( 0, 'en>' . $user->getName() ) .
 					' ' . $this->msg( 'parentheses-start' ) .
-					// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 					Linker::makeExternalLink(
 						'https://interaction-timeline.toolforge.org/' .
 							'?wiki=enwiki&user=' . urlencode( $target ) .
