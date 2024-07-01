@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nemoralis"
+		]
+	},
+	"action-similareditors": "[[Special:SimilarEditors]] səhifəsinə giriş",
+	"right-similareditors": "[[Special:SimilarEditors]] səhifəsinə giriş",
+	"similareditors": "Oxşar redaktorlar",
+	"similareditors-desc": "Oxşar redaktə tarixçəsi olan istifadəçilərin təfərrüatlarını təmin edir.",
+	"similareditors-error-database-refresh": "Xəta baş verdi, bir neçə dəqiqədən sonra yenidən cəhd edin."
+}
