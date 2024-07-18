@@ -4,8 +4,8 @@
 			"Brettchenweber"
 		]
 	},
-	"action-similareditors": "Zugriff auf [[Special:SimilarEditors]]",
-	"right-similareditors": "Zugriff auf [[Special:SimilarEditors]]",
+	"action-similareditors": "Zugriff auf [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Zugriff auf [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Ähnliche Benutzer",
 	"similareditors-desc": "Liefert Details über Benutzer mit ähnlichen Bearbeitungshistorien.",
 	"similareditors-error-database-refresh": "Etwas ist schiefgelaufen, bitte versuche es in ein paar Minuten erneut.",
