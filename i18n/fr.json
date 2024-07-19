@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"MacOS Weed",
 			"Verdy p"
 		]
 	},
-	"action-similareditors": "accéder à [[Special:SimilarEditors]]",
-	"right-similareditors": "Accéder à [[Special:SimilarEditors]]",
+	"action-similareditors": "accéder à [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Accéder à [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Rédacteurs similaires",
 	"similareditors-desc": "Fournit des détails sur les utilisateurs ayant des historiques similaires de modifications.",
 	"similareditors-error-database-refresh": "Quelque chose s’est mal passé, veuillez réessayer dans quelques minutes.",

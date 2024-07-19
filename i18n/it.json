@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"action-similareditors": "accedere [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Accede [[{{#Special:SimilarEditors}}]]",
+	"similareditors-form-field-target-placeholder": "Nome utente o 1.1.1.1"
+}

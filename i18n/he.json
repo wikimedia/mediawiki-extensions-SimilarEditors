@@ -4,8 +4,8 @@
 			"Amire80"
 		]
 	},
-	"action-similareditors": "לגשת לדף המיוחד [[Special:SimilarEditors]]",
-	"right-similareditors": "גישה לדף המיוחד [[Special:SimilarEditors]]",
+	"action-similareditors": "לגשת לדף המיוחד [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "גישה לדף המיוחד [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "עורכים דומים",
 	"similareditors-desc": "אספקת פרטים של משתמשים עם היסטוריית עריכות דומות.",
 	"similareditors-error-database-refresh": "משהו השתבש, נא לנסות שוב בעוד כמה דקות.",
