@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"Lakejason0",
 			"沈澄心"
 		]
 	},
-	"action-similareditors": "访问[[Special:SimilarEditors]]",
-	"right-similareditors": "访问[[Special:SimilarEditors]]",
+	"action-similareditors": "访问[[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "访问[[{{#Special:SimilarEditors}}]]",
 	"similareditors": "相似的编辑者",
 	"similareditors-desc": "提供具有相似编辑历史的用户的详细信息。",
 	"similareditors-error-database-refresh": "出现错误，请几分钟后重试。",
