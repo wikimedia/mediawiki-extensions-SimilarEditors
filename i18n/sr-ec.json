@@ -4,5 +4,6 @@
 			"Milicevic01"
 		]
 	},
-	"right-similareditors": "приступ [[{{#Special:SimilarEditors}}]]"
+	"right-similareditors": "приступ [[{{#Special:SimilarEditors}}]]",
+	"similareditors-form-field-target-placeholder": "Корисничко име или 1.1.1.1"
 }

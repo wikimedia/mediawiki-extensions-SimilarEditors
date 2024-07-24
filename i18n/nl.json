@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Vistaus"
 		]
 	},
-	"action-similareditors": "toegang [[Special:SimilarEditors]]",
-	"right-similareditors": "Toegang [[Special:SimilarEditors]]",
+	"action-similareditors": "[[{{#Special:SimilarEditors}}]] te openen",
+	"right-similareditors": "[[{{#Special:SimilarEditors}}]] openen",
 	"similareditors": "Vergelijkbare bewerkers",
 	"similareditors-desc": "Toont details van gebruikers met vergelijkbare bewerkgeschiedenissen.",
 	"similareditors-error-database-refresh": "Er is iets misgegaan. Probeer het over een paar minuten opnieuw.",
