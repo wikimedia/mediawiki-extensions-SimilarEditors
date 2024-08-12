@@ -73,7 +73,7 @@ class SpecialSimilarEditors extends SpecialPage {
 				->displayForm( false );
 		} else {
 			$status = $this->form->show();
-			if ( $status === true || $status instanceof Status && $status->isGood() ) {
+			if ( $status === true || ( $status instanceof Status && $status->isGood() ) ) {
 				$this->onSuccess();
 			}
 		}
