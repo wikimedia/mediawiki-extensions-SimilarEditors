@@ -4,8 +4,8 @@
 			"Nemoralis"
 		]
 	},
-	"action-similareditors": "[[Special:SimilarEditors]] səhifəsinə giriş",
-	"right-similareditors": "[[Special:SimilarEditors]] səhifəsinə giriş",
+	"action-similareditors": "[[{{#Special:SimilarEditors}}]] səhifəsinə giriş etmək",
+	"right-similareditors": "[[{{#Special:SimilarEditors}}]] səhifəsinə giriş etmək",
 	"similareditors": "Oxşar redaktorlar",
 	"similareditors-desc": "Oxşar redaktə tarixçəsi olan istifadəçilərin təfərrüatlarını təmin edir.",
 	"similareditors-error-database-refresh": "Xəta baş verdi, bir neçə dəqiqədən sonra yenidən cəhd edin."
