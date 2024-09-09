@@ -4,8 +4,8 @@
 			"McDutchie"
 		]
 	},
-	"action-similareditors": "acceder a [[Special:SimilarEditors]]",
-	"right-similareditors": "Acceder a [[Special:SimilarEditors]]",
+	"action-similareditors": "acceder a [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Acceder a [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Redactores similar",
 	"similareditors-desc": "Forni detalios de usatores con historias similar de modificationes.",
 	"similareditors-error-database-refresh": "Un error se ha producite. Per favor tenta lo de novo in qualque minutas.",
