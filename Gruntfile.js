@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function ( grunt ) {
+	const conf = grunt.file.readJSON( 'extension.json' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
@@ -20,14 +21,7 @@ module.exports = function ( grunt ) {
 				'!vendor/**'
 			]
 		},
-		banana: {
-			all: {
-				options: { allowTrailingWhitespace: true },
-				src: [
-					'i18n/', 'i18n/api/'
-				]
-			}
-		}
+		banana: conf.MessagesDirs
 	} );
 
 	grunt.registerTask( 'test', [ 'eslint', 'stylelint', 'banana' ] );
