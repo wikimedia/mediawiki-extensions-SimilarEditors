@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\SimilarEditors;
 
-use Language;
 use MediaWiki\Html\Html;
+use MediaWiki\Language\Language;
 use MediaWiki\Linker\Linker;
 use MediaWiki\Message\Message;
 use MediaWiki\User\UserFactory;

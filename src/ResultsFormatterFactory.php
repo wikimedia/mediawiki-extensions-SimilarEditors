@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\SimilarEditors;
 
-use Language;
+use MediaWiki\Language\Language;
 use MediaWiki\User\UserFactory;
 
 class ResultsFormatterFactory {

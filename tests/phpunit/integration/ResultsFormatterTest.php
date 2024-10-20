@@ -2,10 +2,10 @@
 
 namespace MediaWiki\Extension\SimilarEditors\Test\Integration;
 
-use Language;
 use MediaWiki\Extension\SimilarEditors\Neighbor;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatter;
 use MediaWiki\Extension\SimilarEditors\TimeOverlap;
+use MediaWiki\Language\Language;
 use MediaWiki\User\User;
 use MediaWiki\User\UserFactory;
 use MediaWikiIntegrationTestCase;

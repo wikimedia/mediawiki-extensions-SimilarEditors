@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\SimilarEditors\Test\Unit;
 
-use Language;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatter;
 use MediaWiki\Extension\SimilarEditors\ResultsFormatterFactory;
+use MediaWiki\Language\Language;
 use MediaWiki\User\UserFactory;
 use MediaWikiUnitTestCase;
 
