@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vistaus"
+			"Vistaus",
+			"McDutchie"
 		]
 	},
 	"action-similareditors": "toegang [[Special:SimilarEditors]]",
