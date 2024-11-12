@@ -5,8 +5,8 @@
 			"Meno25"
 		]
 	},
-	"action-similareditors": "دخول [[Special:SimilarEditors]]",
-	"right-similareditors": "دخول [[Special:SimilarEditors]]",
+	"action-similareditors": "الوصول إلى [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "الوصول إلى [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "محررين متشابهين",
 	"similareditors-desc": "يوفر تفاصيل عن المستخدمين الذين لديهم تاريخ تحرير مماثل.",
 	"similareditors-error-database-refresh": "حدث خطأ ما ، يرجى المحاولة مرة أخرى بعد بضع دقائق.",
