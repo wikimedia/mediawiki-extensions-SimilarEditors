@@ -4,8 +4,8 @@
 			"Bjankuloski06"
 		]
 	},
-	"action-similareditors": "пристап до [[Special:SimilarEditors]]",
-	"right-similareditors": "Пристап до [[Special:SimilarEditors]]",
+	"action-similareditors": "пристап до [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Пристап до [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Слични уредници",
 	"similareditors-desc": "Дава поединости за корисници со слични уредувачки истории.",
 	"similareditors-error-database-refresh": "Нешто не е во ред. Обидете се повторно за неколку минути.",
