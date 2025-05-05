@@ -1,4 +1,4 @@
 mw.loader.using( 'ext.quicksurveys.lib' )
-	.then( function () {
+	.then( () => {
 		mw.extQuickSurveys.showSurvey( 'similareditors' );
 	} );
