@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"right-similareditors": "pristup [[{{#Special:SimilarEditors}}]]",
+	"similareditors-form-field-target-placeholder": "Korisničko ime ili 1.1.1.1"
+}
