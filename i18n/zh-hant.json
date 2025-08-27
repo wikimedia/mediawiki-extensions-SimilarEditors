@@ -5,8 +5,8 @@
 			"Winston Sung"
 		]
 	},
-	"action-similareditors": "存取 [[Special:SimilarEditors]]",
-	"right-similareditors": "存取 [[Special:SimilarEditors]]",
+	"action-similareditors": "存取 [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "存取 [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "相似編輯者",
 	"similareditors-desc": "提供具有相似編輯歷史記錄的使用者詳細資訊。",
 	"similareditors-error-database-refresh": "出現了一些錯誤，請幾分鐘後再試。",
