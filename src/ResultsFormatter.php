@@ -22,22 +22,10 @@ class ResultsFormatter {
 		'edits',
 	];
 
-	/** @var UserFactory */
-	private $userFactory;
-
-	/** @var Language */
-	private $language;
-
-	/**
-	 * @param UserFactory $userFactory
-	 * @param Language $language
-	 */
 	public function __construct(
-		UserFactory $userFactory,
-		Language $language
+		private readonly UserFactory $userFactory,
+		private readonly Language $language,
 	) {
-		$this->userFactory = $userFactory;
-		$this->language = $language;
 	}
 
 	/**

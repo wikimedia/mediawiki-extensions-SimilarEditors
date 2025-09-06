@@ -11,26 +11,14 @@ use OOUI\MessageWidget;
 
 class SpecialSimilarEditors extends SpecialPage {
 
-	/** @var Client */
-	private $similarEditorsClient;
-
-	/** @var ResultsFormatterFactory */
-	private $resultsFormatterFactory;
-
 	/** @var HTMLForm */
 	private $form;
 
-	/**
-	 * @param Client $similarEditorsClient
-	 * @param ResultsFormatterFactory $resultsFormatterFactory
-	 */
 	public function __construct(
-		Client $similarEditorsClient,
-		ResultsFormatterFactory $resultsFormatterFactory
+		private readonly Client $similarEditorsClient,
+		private readonly ResultsFormatterFactory $resultsFormatterFactory,
 	) {
 		parent::__construct( 'SimilarEditors', 'similareditors', true );
-		$this->similarEditorsClient = $similarEditorsClient;
-		$this->resultsFormatterFactory = $resultsFormatterFactory;
 	}
 
 	/**

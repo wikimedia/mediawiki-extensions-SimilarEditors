@@ -8,50 +8,13 @@ use Psr\Log\LoggerInterface;
 
 class SimilarEditorsClient implements Client {
 
-	/**
-	 * @var HttpRequestFactory
-	 */
-	private $httpRequestFactory;
-
-	/**
-	 * @var LoggerInterface
-	 */
-	private $logger;
-
-	/**
-	 * @var string
-	 */
-	private $apiUrl;
-
-	/**
-	 * @var string
-	 */
-	private $apiUser;
-
-	/**
-	 * @var string
-	 */
-	private $apiPassword;
-
-	/**
-	 * @param HttpRequestFactory $httpRequestFactory
-	 * @param LoggerInterface $logger
-	 * @param string $apiUrl
-	 * @param string $apiUser
-	 * @param string $apiPassword
-	 */
 	public function __construct(
-		HttpRequestFactory $httpRequestFactory,
-		LoggerInterface $logger,
-		string $apiUrl,
-		string $apiUser,
-		string $apiPassword
+		private readonly HttpRequestFactory $httpRequestFactory,
+		private readonly LoggerInterface $logger,
+		private readonly string $apiUrl,
+		private readonly string $apiUser,
+		private readonly string $apiPassword,
 	) {
-		$this->httpRequestFactory = $httpRequestFactory;
-		$this->logger = $logger;
-		$this->apiUrl = $apiUrl;
-		$this->apiUser = $apiUser;
-		$this->apiPassword = $apiPassword;
 	}
 
 	/**
