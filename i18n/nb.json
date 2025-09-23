@@ -4,8 +4,8 @@
 			"Jon Harald Søby"
 		]
 	},
-	"action-similareditors": "få tilgang [[Special:SimilarEditors]]",
-	"right-similareditors": "Få tilgang til [[Special:SimilarEditors]]",
+	"action-similareditors": "få tilgang [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Få tilgang til [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Lignende bidragsytere",
 	"similareditors-desc": "Gir detaljer om brukere med lignende redigeringshistorikk.",
 	"similareditors-error-database-refresh": "Noe har gått galt. Prøv igjen om noen minutter.",
