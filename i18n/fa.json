@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jeeputer"
+			"Jeeputer",
+			"LordProfo"
 		]
 	},
+	"similareditors-results-user": "کاربر",
 	"similareditors-results-user-timeline": "خط زمان"
 }
