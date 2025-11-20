@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Hedda",
-			"Rapsar"
+			"Rapsar",
+			"SaldırganSincap"
 		]
 	},
-	"action-similareditors": "[[Special:SimilarEditors]] sayfasına erişim",
-	"right-similareditors": "[[Special:SimilarEditors]] sayfasına erişim",
+	"action-similareditors": "[[{{#Special:SimilarEditors}}]] sayfasına erişim",
+	"right-similareditors": "[[{{#Special:SimilarEditors}}]] sayfasına eriş",
 	"similareditors": "Benzer Editörler",
 	"similareditors-desc": "Benzer düzenleme geçmişine sahip kullanıcıların ayrıntılarını göterir.",
 	"similareditors-form-field-target-label": "Kullanıcı adı veya IP adresi:",
