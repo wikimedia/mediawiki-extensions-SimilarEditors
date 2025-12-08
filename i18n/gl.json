@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"similareditors": "Editores semellantes",
+	"similareditors-desc": "Ofrece detalles de usuarios con historiais de edición semellantes.",
+	"similareditors-error-database-refresh": "Algo fallou. Inténtao de novo nuns minutos.",
+	"similareditors-error-default": "Algo fallou. Estamos a investigalo.",
+	"similareditors-error-user-bot": "O usuario $1 é un bot e, polo tanto, está fóra do ámbito de actuación.",
+	"similareditors-error-user-no-account": "Semella que o usuario $1 non ten unha conta na Wikipedia en inglés.",
+	"similareditors-error-user-no-edits": "Semella que o usuario $1 non ten unha conta (nin edicións) na Wikipedia en inglés.",
+	"similareditors-extensionname": "Editores semellantes",
+	"similareditors-form-field-target-label": "Nome de usuario ou enderezo IP:",
+	"similareditors-form-legend": "Atopar editores semellantes",
+	"similareditors-form-submit": "Procurar",
+	"similareditors-no-results": "Non hai resultados.",
+	"similareditors-overlap-level-high": "Alta",
+	"similareditors-overlap-level-low": "Baixa",
+	"similareditors-overlap-level-medium": "Media",
+	"similareditors-overlap-level-no-overlap": "Sen superposición",
+	"similareditors-results-day-overlap": "Superposición de días",
+	"similareditors-results-edit-overlap": "Superposición de edicións",
+	"similareditors-results-edits": "Edicións nos datos",
+	"similareditors-results-hour-overlap": "Superposición de horas",
+	"similareditors-results-inverse-edit-overlap": "Superposición inversa de edicións",
+	"similareditors-results-user": "Usuario",
+	"similareditors-results-user-timeline": "cronoloxía",
+	"similareditors-summary": "Atopa os editores máis semellantes a un editor determinado segundo o historial de edicións."
+}
