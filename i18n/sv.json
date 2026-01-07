@@ -1,13 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"Stefan2255"
 		]
 	},
-	"action-similareditors": "komma åt [[Special:SimilarEditors]]",
-	"right-similareditors": "Komma åt [[Special:SimilarEditors]]",
+	"action-similareditors": "komma åt [[{{#Special:SimilarEditors}}]]",
+	"right-similareditors": "Komma åt [[{{#Special:SimilarEditors}}]]",
 	"similareditors": "Liknande redigerare",
 	"similareditors-desc": "Tillhandahåller detaljer om användare med liknande redigeringshistoriker.",
+	"similareditors-error-database-refresh": "Något har gått fel, försök igen om några minuter.",
+	"similareditors-error-default": "Något har gått fel, vi undersöker det.",
+	"similareditors-error-user-bot": "Användaren $1 är en bot och därför utanför omfattning.",
+	"similareditors-error-user-no-account": "Användaren $1 verkar inte ha ett konto på engelsk Wikipedia.",
+	"similareditors-error-user-no-edits": "Användaren $1 verkar inte ha ett konto (eller redigeringar inom omfattning) på engelsk Wikipedia.",
 	"similareditors-form-field-target-label": "Användarnamn eller IP-adress:",
 	"similareditors-form-field-target-placeholder": "Användarnamn eller 1.1.1.1",
 	"similareditors-form-legend": "Hitta liknande redigerare",
