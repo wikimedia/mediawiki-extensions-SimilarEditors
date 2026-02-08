@@ -18,7 +18,7 @@ class SpecialSimilarEditors extends SpecialPage {
 		private readonly Client $similarEditorsClient,
 		private readonly ResultsFormatterFactory $resultsFormatterFactory,
 	) {
-		parent::__construct( 'SimilarEditors', 'similareditors', true );
+		parent::__construct( 'SimilarEditors', 'similareditors' );
 	}
 
 	/**
