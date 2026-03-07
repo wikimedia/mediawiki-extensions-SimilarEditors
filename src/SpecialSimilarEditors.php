@@ -97,7 +97,7 @@ class SpecialSimilarEditors extends SpecialPage {
 				);
 				$out->addHtml( $resultsFormatter->formatResults( $target, $result ) );
 			} else {
-				$out->addHtml( $this->msg( 'similareditors-no-results' ) );
+				$out->addHtml( $this->msg( 'similareditors-no-results' )->parse() );
 			}
 		} else {
 			switch ( $result ) {
