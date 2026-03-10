@@ -119,7 +119,7 @@ class SpecialSimilarEditors extends SpecialPage {
 					$message = 'similareditors-error-default';
 			}
 			$out->addHtml(
-				new MessageWidget( [
+				(string)new MessageWidget( [
 					'type' => 'error',
 					'label' => new HtmlSnippet(
 						$this->msg( $message )->parse() ),
