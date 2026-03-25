@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"similareditors": "Editores semelhantes",
+	"similareditors-desc": "Fornece detalhes de usuários com historiais de edição semelhantes.",
+	"similareditors-error-database-refresh": "Ocorreu um erro não identificado. Tente novamente em alguns minutos.",
+	"similareditors-error-default": "Ocorreu um erro não identificado; estamos analisando esta ocorrência.",
+	"similareditors-error-user-bot": "O usuário $1 é um robô e, portanto, está fora de escopo.",
+	"similareditors-error-user-no-account": "O usuário $1 não parece ter uma conta na Wikipédia em inglês.",
+	"similareditors-error-user-no-edits": "O usuário $1 não parece ter uma conta (nem edições dentro do escopo) na Wikipédia em inglês.",
+	"similareditors-form-field-target-label": "Nome de usuário ou endereço IP:",
+	"similareditors-form-field-target-placeholder": "Nome de usuário ou 1.1.1.1",
+	"similareditors-form-legend": "Procurar editores semelhantes",
+	"similareditors-form-submit": "Procurar",
+	"similareditors-no-results": "Não há resultados.",
+	"similareditors-overlap-level-high": "Alta",
+	"similareditors-overlap-level-low": "Baixa",
+	"similareditors-overlap-level-medium": "Média",
+	"similareditors-overlap-level-no-overlap": "Sem sobreposições",
+	"similareditors-results-edits": "Edições nos dados",
+	"similareditors-results-user": "Usuário",
+	"similareditors-results-user-timeline": "linha do tempo",
+	"similareditors-summary": "Procurar os editores mais semelhantes a um determinado editor com base no historial de edições."
+}
