@@ -20,7 +20,11 @@
 	"similareditors-overlap-level-low": "Baixa",
 	"similareditors-overlap-level-medium": "Média",
 	"similareditors-overlap-level-no-overlap": "Sem sobreposições",
+	"similareditors-results-day-overlap": "Sobreposição de dias",
+	"similareditors-results-edit-overlap": "Sobreposição de edições",
 	"similareditors-results-edits": "Edições nos dados",
+	"similareditors-results-hour-overlap": "Sobreposição de horas",
+	"similareditors-results-inverse-edit-overlap": "Sobreposição de edições inversa",
 	"similareditors-results-user": "Usuário",
 	"similareditors-results-user-timeline": "linha do tempo",
 	"similareditors-summary": "Procurar os editores mais semelhantes a um determinado editor com base no historial de edições."
