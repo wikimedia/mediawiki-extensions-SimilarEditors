@@ -8,8 +8,8 @@ use MediaWiki\Extension\SimilarEditors\ResultsFormatterFactory;
 use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
 use MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors;
 use MediaWiki\Request\FauxRequest;
-use SpecialPageExecutor;
-use SpecialPageTestBase;
+use MediaWiki\Tests\Specials\SpecialPageExecutor;
+use MediaWiki\Tests\Specials\SpecialPageTestBase;
 
 /**
  * @covers MediaWiki\Extension\SimilarEditors\SpecialSimilarEditors

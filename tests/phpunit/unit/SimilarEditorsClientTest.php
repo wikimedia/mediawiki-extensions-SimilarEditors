@@ -6,9 +6,9 @@ use MediaWiki\Extension\SimilarEditors\Neighbor;
 use MediaWiki\Extension\SimilarEditors\SimilarEditorsClient;
 use MediaWiki\Extension\SimilarEditors\TimeOverlap;
 use MediaWiki\Http\HttpRequestFactory;
+use MediaWiki\Http\MWHttpRequest;
 use MediaWiki\Status\Status;
 use MediaWikiUnitTestCase;
-use MWHttpRequest;
 use Psr\Log\LoggerInterface;
 
 /**
