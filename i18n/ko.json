@@ -1,12 +1,34 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
+	"action-similareditors": "[[{{#Special:SimilarEditors}}]]에 접근할",
+	"right-similareditors": "[[{{#Special:SimilarEditors}}]]에 접근",
+	"similareditors": "비슷한 편집자",
+	"similareditors-desc": "편집 이력이 유사한 사용자에 대한 세부 정보를 제공합니다.",
+	"similareditors-error-database-refresh": "오류가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+	"similareditors-error-default": "문제가 발생했습니다. 현재 조사 중입니다.",
 	"similareditors-error-user-bot": "$1 사용자는 봇이므로 범위를 벗어납니다.",
 	"similareditors-error-user-no-account": "$1 사용자는 영어 위키백과에 계정이 없는 것 같습니다.",
 	"similareditors-error-user-no-edits": "$1 사용자는 영어 위키백과에서 계정(또는 범위 내 편집)이 없는 것 같습니다.",
+	"similareditors-form-field-target-label": "사용자 이름 또는 IP 주소:",
+	"similareditors-form-field-target-placeholder": "사용자 이름 또는 1.1.1.1",
+	"similareditors-form-legend": "비슷한 편집자 찾기",
+	"similareditors-form-submit": "찾기",
+	"similareditors-no-results": "결과가 없습니다.",
+	"similareditors-overlap-level-high": "높음",
+	"similareditors-overlap-level-low": "낮음",
+	"similareditors-overlap-level-medium": "중간",
+	"similareditors-overlap-level-no-overlap": "겹치는 부분 없음",
+	"similareditors-results-day-overlap": "겹치는 부분 (일)",
+	"similareditors-results-edit-overlap": "겹치는 부분 (편집)",
+	"similareditors-results-edits": "편집 데이터",
+	"similareditors-results-hour-overlap": "겹치는 부분 (시간)",
+	"similareditors-results-inverse-edit-overlap": "겹치는 부분 반전 (편집)",
 	"similareditors-results-user": "사용자",
-	"similareditors-results-user-timeline": "타임라인"
+	"similareditors-results-user-timeline": "타임라인",
+	"similareditors-summary": "편집 이력을 바탕으로 주어진 편집자와 가장 유사한 편집자를 찾습니다."
 }
