@@ -21,6 +21,8 @@ class SimilarEditorsClientTest extends MediaWikiUnitTestCase {
 		$status = $this->createMock( Status::class );
 		$status->method( 'isOK' )
 			->willReturn( true );
+		$status->method( 'getWikiText' )
+			->willReturn( '' );
 
 		$request = $this->createMock( MWHttpRequest::class );
 		$request->method( 'getContent' )
