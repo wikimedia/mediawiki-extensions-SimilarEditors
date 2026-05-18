@@ -5,7 +5,7 @@
 			"Ykhwong"
 		]
 	},
-	"action-similareditors": "[[{{#Special:SimilarEditors}}]]에 접근할",
+	"action-similareditors": "[[{{#Special:SimilarEditors}}]]에 접근",
 	"right-similareditors": "[[{{#Special:SimilarEditors}}]]에 접근",
 	"similareditors": "비슷한 편집자",
 	"similareditors-desc": "편집 이력이 유사한 사용자에 대한 세부 정보를 제공합니다.",
